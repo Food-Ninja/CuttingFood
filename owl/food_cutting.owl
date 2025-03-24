@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.ease-crc.org/ont/food_cutting#"
      xml:base="http://www.ease-crc.org/ont/food_cutting"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -102,16 +103,6 @@ As long as you:
     
 
 
-    <!-- http://www.ease-crc.org/ont/food_cutting#hasColor -->
-
-    <owl:ObjectProperty rdf:about="http://www.ease-crc.org/ont/food_cutting#hasColor">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001057"/>
-        <rdfs:range rdf:resource="http://www.ease-crc.org/ont/food_cutting#Color"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.ease-crc.org/ont/food_cutting#hasEdibility -->
 
     <owl:ObjectProperty rdf:about="http://www.ease-crc.org/ont/food_cutting#hasEdibility">
@@ -122,29 +113,10 @@ As long as you:
     
 
 
-    <!-- http://www.ease-crc.org/ont/food_cutting#hasInitialState -->
-
-    <owl:ObjectProperty rdf:about="http://www.ease-crc.org/ont/food_cutting#hasInitialState">
-        <rdfs:subPropertyOf rdf:resource="http://www.ease-crc.org/ont/food_cutting#hasState"/>
-        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
-        <rdfs:range rdf:resource="http://www.ease-crc.org/ont/food_cutting#FruitState"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.ease-crc.org/ont/food_cutting#hasInputObject -->
 
     <owl:ObjectProperty rdf:about="http://www.ease-crc.org/ont/food_cutting#hasInputObject">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ease-crc.org/ont/food_cutting#hasLocation -->
-
-    <owl:ObjectProperty rdf:about="http://www.ease-crc.org/ont/food_cutting#hasLocation">
-        <rdfs:domain rdf:resource="http://www.ease-crc.org/ont/food_cutting#PartInside"/>
-        <rdfs:range rdf:resource="http://www.ease-crc.org/ont/food_cutting#FoodPart"/>
     </owl:ObjectProperty>
     
 
@@ -169,31 +141,6 @@ As long as you:
     
 
 
-    <!-- http://www.ease-crc.org/ont/food_cutting#hasResultingState -->
-
-    <owl:ObjectProperty rdf:about="http://www.ease-crc.org/ont/food_cutting#hasResultingState">
-        <rdfs:subPropertyOf rdf:resource="http://www.ease-crc.org/ont/food_cutting#hasState"/>
-        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
-        <rdfs:range rdf:resource="http://www.ease-crc.org/ont/food_cutting#FruitState"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ease-crc.org/ont/food_cutting#hasSize -->
-
-    <owl:ObjectProperty rdf:about="http://www.ease-crc.org/ont/food_cutting#hasSize">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001057"/>
-        <rdfs:range rdf:resource="http://www.ease-crc.org/ont/food_cutting#Size"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ease-crc.org/ont/food_cutting#hasState -->
-
-    <owl:ObjectProperty rdf:about="http://www.ease-crc.org/ont/food_cutting#hasState"/>
-    
-
-
     <!-- http://www.ease-crc.org/ont/food_cutting#partOf -->
 
     <owl:ObjectProperty rdf:about="http://www.ease-crc.org/ont/food_cutting#partOf">
@@ -208,15 +155,6 @@ As long as you:
         <rdfs:subPropertyOf rdf:resource="http://www.ease-crc.org/ont/meal_prep#hasPriorTask"/>
         <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
         <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ease-crc.org/ont/food_cutting#target -->
-
-    <owl:ObjectProperty rdf:about="http://www.ease-crc.org/ont/food_cutting#target">
-        <rdfs:domain rdf:resource="http://www.ease-crc.org/ont/food_cutting#CuttingTask"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001057"/>
     </owl:ObjectProperty>
     
 
@@ -250,14 +188,6 @@ As long as you:
 
     <owl:DatatypeProperty rdf:about="http://www.ease-crc.org/ont/food_cutting#amount">
         <rdfs:domain rdf:resource="http://www.ease-crc.org/ont/food_cutting#CuttingTask"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.ease-crc.org/ont/food_cutting#angle -->
-
-    <owl:DatatypeProperty rdf:about="http://www.ease-crc.org/ont/food_cutting#angle">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
     
@@ -385,12 +315,6 @@ As long as you:
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ease-crc.org/ont/food_cutting#hasColor"/>
-                <owl:hasValue rdf:resource="http://www.ease-crc.org/ont/food_cutting#Green"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1729,6 +1653,7 @@ As long as you:
 
     <owl:Class rdf:about="http://qudt.org/schema/qudt/Quantity">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"/>
     </owl:Class>
     
 
@@ -1810,7 +1735,7 @@ As long as you:
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ease-crc.org/ont/food_cutting#affordsPosition"/>
-                <owl:someValuesFrom rdf:resource="http://www.ease-crc.org/ont/food_cutting#slicing_position"/>
+                <owl:someValuesFrom rdf:resource="http://www.ease-crc.org/ont/food_cutting#SlicingPosition"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1859,7 +1784,7 @@ As long as you:
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ease-crc.org/ont/food_cutting#affordsPosition"/>
-                <owl:someValuesFrom rdf:resource="http://www.ease-crc.org/ont/food_cutting#slicing_position"/>
+                <owl:someValuesFrom rdf:resource="http://www.ease-crc.org/ont/food_cutting#SlicingPosition"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1884,7 +1809,7 @@ As long as you:
     <!-- http://www.ease-crc.org/ont/SOMA.owl#Disposition -->
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Disposition">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/food_cutting#ObjectProperty"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/food_cutting#PhysicalQuality"/>
     </owl:Class>
     
 
@@ -1932,7 +1857,7 @@ As long as you:
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ease-crc.org/ont/food_cutting#affordsPosition"/>
-                <owl:someValuesFrom rdf:resource="http://www.ease-crc.org/ont/food_cutting#slicing_position"/>
+                <owl:someValuesFrom rdf:resource="http://www.ease-crc.org/ont/food_cutting#SlicingPosition"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1970,14 +1895,6 @@ As long as you:
     <owl:Class rdf:about="http://www.ease-crc.org/ont/food_cutting#Chopping">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Dicing"/>
         <verb xml:lang="en">chop</verb>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ease-crc.org/ont/food_cutting#Color -->
-
-    <owl:Class rdf:about="http://www.ease-crc.org/ont/food_cutting#Color">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/food_cutting#ObjectProperty"/>
     </owl:Class>
     
 
@@ -2088,6 +2005,14 @@ As long as you:
     
 
 
+    <!-- http://www.ease-crc.org/ont/food_cutting#CuttingPosition -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/food_cutting#CuttingPosition">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/food_cutting#Parameter"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.ease-crc.org/ont/food_cutting#CuttingTask -->
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/food_cutting#CuttingTask">
@@ -2096,10 +2021,11 @@ As long as you:
     
 
 
-    <!-- http://www.ease-crc.org/ont/food_cutting#Deseeded -->
+    <!-- http://www.ease-crc.org/ont/food_cutting#Dividing -->
 
-    <owl:Class rdf:about="http://www.ease-crc.org/ont/food_cutting#Deseeded">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/food_cutting#FruitState"/>
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/food_cutting#Dividing">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/food_cutting#Halving"/>
+        <verb xml:lang="en">divide</verb>
     </owl:Class>
     
 
@@ -2169,14 +2095,6 @@ As long as you:
     
 
 
-    <!-- http://www.ease-crc.org/ont/food_cutting#FruitState -->
-
-    <owl:Class rdf:about="http://www.ease-crc.org/ont/food_cutting#FruitState">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/food_cutting#ObjectProperty"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.ease-crc.org/ont/food_cutting#Halve -->
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/food_cutting#Halve">
@@ -2207,7 +2125,7 @@ As long as you:
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ease-crc.org/ont/food_cutting#affordsPosition"/>
-                <owl:someValuesFrom rdf:resource="http://www.ease-crc.org/ont/food_cutting#halving_position"/>
+                <owl:someValuesFrom rdf:resource="http://www.ease-crc.org/ont/food_cutting#HalvingPosition"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2218,6 +2136,14 @@ As long as you:
         </rdfs:subClassOf>
         <verb xml:lang="en">halve</verb>
         <rdfs:comment xml:lang="en">Cut the object into halves</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/food_cutting#HalvingPosition -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/food_cutting#HalvingPosition">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/food_cutting#CuttingPosition"/>
     </owl:Class>
     
 
@@ -2257,7 +2183,7 @@ As long as you:
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ease-crc.org/ont/food_cutting#affordsPosition"/>
-                <owl:someValuesFrom rdf:resource="http://www.ease-crc.org/ont/food_cutting#slicing_position"/>
+                <owl:someValuesFrom rdf:resource="http://www.ease-crc.org/ont/food_cutting#SlicingPosition"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2312,18 +2238,19 @@ As long as you:
     
 
 
-    <!-- http://www.ease-crc.org/ont/food_cutting#ObjectProperty -->
-
-    <owl:Class rdf:about="http://www.ease-crc.org/ont/food_cutting#ObjectProperty">
-        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.ease-crc.org/ont/food_cutting#Oval -->
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/food_cutting#Oval">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/food_cutting#Shape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/food_cutting#Parameter -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/food_cutting#Parameter">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"/>
     </owl:Class>
     
 
@@ -2394,29 +2321,6 @@ As long as you:
     
 
 
-    <!-- http://www.ease-crc.org/ont/food_cutting#Peeled -->
-
-    <owl:Class rdf:about="http://www.ease-crc.org/ont/food_cutting#Peeled">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/food_cutting#FruitState"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ease-crc.org/ont/food_cutting#PeeledAndDeseeded -->
-
-    <owl:Class rdf:about="http://www.ease-crc.org/ont/food_cutting#PeeledAndDeseeded">
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ease-crc.org/ont/food_cutting#Deseeded"/>
-                    <rdf:Description rdf:about="http://www.ease-crc.org/ont/food_cutting#Peeled"/>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
     <!-- http://www.ease-crc.org/ont/food_cutting#Peeler -->
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/food_cutting#Peeler">
@@ -2430,20 +2334,6 @@ As long as you:
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/food_cutting#Peeling">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/food_cutting#FoodPreparation"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.ease-crc.org/ont/food_cutting#hasInitialState"/>
-                        <owl:someValuesFrom rdf:resource="http://www.ease-crc.org/ont/food_cutting#Raw"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.ease-crc.org/ont/food_cutting#hasResultingState"/>
-                        <owl:allValuesFrom rdf:resource="http://www.ease-crc.org/ont/food_cutting#Peeled"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -2452,6 +2342,14 @@ As long as you:
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/food_cutting#PeelingTool">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/food_cutting#Tool"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/food_cutting#PhysicalQuality -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/food_cutting#PhysicalQuality">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
     </owl:Class>
     
 
@@ -2526,7 +2424,7 @@ As long as you:
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ease-crc.org/ont/food_cutting#affordsPosition"/>
-                <owl:someValuesFrom rdf:resource="http://www.ease-crc.org/ont/food_cutting#halving_position"/>
+                <owl:someValuesFrom rdf:resource="http://www.ease-crc.org/ont/food_cutting#HalvingPosition"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2543,14 +2441,6 @@ As long as you:
         </rdfs:subClassOf>
         <verb xml:lang="en">quarter</verb>
         <rdfs:comment xml:lang="en">Cut an object into Quarter</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ease-crc.org/ont/food_cutting#Raw -->
-
-    <owl:Class rdf:about="http://www.ease-crc.org/ont/food_cutting#Raw">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/food_cutting#FruitState"/>
     </owl:Class>
     
 
@@ -2600,7 +2490,7 @@ As long as you:
     <!-- http://www.ease-crc.org/ont/food_cutting#Shape -->
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/food_cutting#Shape">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/food_cutting#ObjectProperty"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/food_cutting#PhysicalQuality"/>
     </owl:Class>
     
 
@@ -2630,14 +2520,6 @@ As long as you:
     
 
 
-    <!-- http://www.ease-crc.org/ont/food_cutting#Size -->
-
-    <owl:Class rdf:about="http://www.ease-crc.org/ont/food_cutting#Size">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/food_cutting#ObjectProperty"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.ease-crc.org/ont/food_cutting#SkinOrPeel -->
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/food_cutting#SkinOrPeel">
@@ -2651,6 +2533,14 @@ As long as you:
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/food_cutting#Slice">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/food_cutting#Shape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/food_cutting#SlicingPosition -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/food_cutting#SlicingPosition">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/food_cutting#CuttingPosition"/>
     </owl:Class>
     
 
@@ -2735,22 +2625,6 @@ As long as you:
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/food_cutting#Tool">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ease-crc.org/ont/food_cutting#halving_position -->
-
-    <owl:Class rdf:about="http://www.ease-crc.org/ont/food_cutting#halving_position">
-        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpaceRegion"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ease-crc.org/ont/food_cutting#slicing_position -->
-
-    <owl:Class rdf:about="http://www.ease-crc.org/ont/food_cutting#slicing_position">
-        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpaceRegion"/>
     </owl:Class>
     
 
@@ -2846,14 +2720,6 @@ As long as you:
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract -->
-
-    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract">
-        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action -->
 
     <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action">
@@ -2910,26 +2776,10 @@ As long as you:
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region -->
-
-    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region">
-        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject -->
 
     <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpaceRegion -->
-
-    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpaceRegion">
-        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"/>
     </owl:Class>
     
 
@@ -2939,123 +2789,6 @@ As long as you:
     <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType"/>
     </owl:Class>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.ease-crc.org/ont/food_cutting#AppleCutter_1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ease-crc.org/ont/food_cutting#AppleCutter_1">
-        <rdf:type rdf:resource="http://www.ease-crc.org/ont/food_cutting#AppleCutter"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ease-crc.org/ont/food_cutting#Green -->
-
-    <owl:NamedIndividual rdf:about="http://www.ease-crc.org/ont/food_cutting#Green">
-        <rdf:type rdf:resource="http://www.ease-crc.org/ont/food_cutting#Color"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ease-crc.org/ont/food_cutting#Green_Apple -->
-
-    <owl:NamedIndividual rdf:about="http://www.ease-crc.org/ont/food_cutting#Green_Apple">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301710"/>
-        <hasColor rdf:resource="http://www.ease-crc.org/ont/food_cutting#Green"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ease-crc.org/ont/food_cutting#Large -->
-
-    <owl:NamedIndividual rdf:about="http://www.ease-crc.org/ont/food_cutting#Large">
-        <rdf:type rdf:resource="http://www.ease-crc.org/ont/food_cutting#Size"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ease-crc.org/ont/food_cutting#Medium -->
-
-    <owl:NamedIndividual rdf:about="http://www.ease-crc.org/ont/food_cutting#Medium">
-        <rdf:type rdf:resource="http://www.ease-crc.org/ont/food_cutting#Size"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ease-crc.org/ont/food_cutting#Orange -->
-
-    <owl:NamedIndividual rdf:about="http://www.ease-crc.org/ont/food_cutting#Orange">
-        <rdf:type rdf:resource="http://www.ease-crc.org/ont/food_cutting#Color"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ease-crc.org/ont/food_cutting#Orange_01 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ease-crc.org/ont/food_cutting#Orange_01">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FOODON_03309832"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ease-crc.org/ont/food_cutting#Orange_02 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ease-crc.org/ont/food_cutting#Orange_02">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FOODON_03309832"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ease-crc.org/ont/food_cutting#ParingKnife_01 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ease-crc.org/ont/food_cutting#ParingKnife_01">
-        <rdf:type rdf:resource="http://www.ease-crc.org/ont/food_cutting#ParingKnife"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ease-crc.org/ont/food_cutting#QuarteringRedAppleWithParing -->
-
-    <owl:NamedIndividual rdf:about="http://www.ease-crc.org/ont/food_cutting#QuarteringRedAppleWithParing">
-        <target rdf:resource="http://www.ease-crc.org/ont/food_cutting#Red_Apple"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ease-crc.org/ont/food_cutting#Red -->
-
-    <owl:NamedIndividual rdf:about="http://www.ease-crc.org/ont/food_cutting#Red">
-        <rdf:type rdf:resource="http://www.ease-crc.org/ont/food_cutting#Color"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ease-crc.org/ont/food_cutting#Red_Apple -->
-
-    <owl:NamedIndividual rdf:about="http://www.ease-crc.org/ont/food_cutting#Red_Apple">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301710"/>
-        <hasColor rdf:resource="http://www.ease-crc.org/ont/food_cutting#Red"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ease-crc.org/ont/food_cutting#Small -->
-
-    <owl:NamedIndividual rdf:about="http://www.ease-crc.org/ont/food_cutting#Small">
-        <rdf:type rdf:resource="http://www.ease-crc.org/ont/food_cutting#Size"/>
-    </owl:NamedIndividual>
 </rdf:RDF>
 
 
