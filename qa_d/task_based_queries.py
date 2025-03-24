@@ -1,29 +1,45 @@
-# Prefix Mapping:
-# cut: <http://www.ease-crc.org/ont/food_cutting#>
-# owl: <http://www.w3.org/2002/07/owl#>
-# rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-# rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-# foodon: <http://purl.obolibrary.org/obo/>
-# soma: <http://www.ease-crc.org/ont/SOMA.owl#>
-# sit_aware: <http://www.ease-crc.org/ont/situation_awareness#>
+from rdflib import Graph
 
-# Prefixes: owl, cut, rdf, rdfs, foodon
-def get_part_connection_query(food: str, part: str) -> str:
-    return f"""
-    ASK {{
-        foodon:{food} rdfs:subClassOf* ?parts_node.
-        ?parts_node owl:onProperty cut:hasPart.
-        ?parts_node owl:someValuesFrom ?val_node.
-        ?val_node owl:intersectionOf ?inter_node.
-        ?inter_node rdf:first cut:{part}.
-    }}
-    """
+tasks = {
+    'quartering': "cut:Quartering",
+    'julienning': "cut:Julienning",
+    'halving': "cut:Halving",
+    'dicing': "soma:Dicing",
+    'cutting': "soma:Cutting",
+    'slicing': "soma:Slicing",
+    'snipping': "cut:Snipping",
+    'slivering': "cut:Slivering",
+    'sawing': "cut:Sawing",
+    'paring': "cut:Paring",
+    'carving': "cut:Carving",
+    'mincing': "cut:Mincing",
+    'cubing': "cut:Cubing",
+    'chopping': "cut:Chopping",
+    'dividing': "cut:Dividing"
+}
+
+
+def get_qas_for_taks(graph: Graph) -> (str, str):
+    res = []
+    for task, iri in tasks.items():
+        for row in graph.query(get_cutting_position_query(iri)):
+            if row.res == 'SlicingPosition':
+                res.append((get_cutting_position_question(task), 'End'))
+            else:
+                res.append((get_cutting_position_question(task), 'Middle'))
+        for row in graph.query(get_prior_task_query(iri)):
+            res.append((get_prior_task_question(task), row.res))
+        for row in graph.query(get_repetitions_query(iri)):
+            res.append((get_repetitions_question(task), row.res))
+        for row in graph.query(get_action_target_query(iri)):
+            res.append((get_action_target_question(task), row.res))
+    return res
 
 
 # Prefixes: owl, cut, soma, rdfs
 def get_cutting_position_query(verb: str) -> str:
     return f"""
-    SELECT * WHERE {{
+    SELECT ?res WHERE {{
         {verb} rdfs:subClassOf* ?pos_node.
         ?pos_node owl:onProperty cut:affordsPosition.
         ?pos_node owl:someValuesFrom ?pos.
@@ -32,44 +48,8 @@ def get_cutting_position_query(verb: str) -> str:
     """
 
 
-# Prefixes: owl, soma, rdf, rdfs, foodon, sit_aware
-def get_cutting_tool_query(food: str) -> str:
-    return f"""
-    SELECT ?res WHERE {{
-        foodon:{food} rdfs:subClassOf* ?peel_dis.
-        ?peel_dis owl:onProperty soma:hasDisposition.
-        ?peel_dis owl:someValuesFrom ?peel_dis_vals.
-        ?peel_dis_vals owl:intersectionOf ?afford_vals.
-        ?afford_vals rdf:first sit_aware:Cuttability.
-        ?afford_vals rdf:rest ?task_trigger.
-        ?task_trigger rdf:rest ?trigger.
-        ?trigger rdf:first ?trigger_wo_nil.
-        ?trigger_wo_nil owl:onProperty soma:affordsTrigger.
-        ?trigger_wo_nil owl:allValuesFrom ?trigger_tool.
-        ?trigger_tool owl:allValuesFrom ?tool.
-        BIND(REPLACE(STR(?tool), "^.*[#/]", "") AS ?res).
-    }}
-    """
-
-
-# Prefixes: owl, cut, soma, rdf, rdfs, foodon
-def get_peeling_tool_query(food: str) -> str:
-    return f"""
-    SELECT ?res WHERE {{
-        foodon:{food} rdfs:subClassOf* ?peel_dis.
-        ?peel_dis owl:onProperty soma:hasDisposition.
-        ?peel_dis owl:someValuesFrom ?peel_dis_vals.
-        ?peel_dis_vals owl:intersectionOf ?afford_vals.
-        ?afford_vals rdf:first cut:Peelability.
-        ?afford_vals rdf:rest ?task_trigger.
-        ?task_trigger rdf:rest ?trigger.
-        ?trigger rdf:first ?trigger_wo_nil.
-        ?trigger_wo_nil owl:onProperty soma:affordsTrigger.
-        ?trigger_wo_nil owl:allValuesFrom ?trigger_tool.
-        ?trigger_tool owl:allValuesFrom ?tool.
-        BIND(REPLACE(STR(?tool), "^.*[#/]", "") AS ?res).
-    }}
-    """
+def get_cutting_position_question(verb: str) -> str:
+    return f"When {verb} a specific fruit or vegetable, where should the knife be placed - in the middle or at the end of the object?"
 
 
 # Prefixes: owl, cut, soma, rdfs
@@ -82,6 +62,10 @@ def get_prior_task_query(verb: str) -> str:
         BIND(REPLACE(STR(?priortask), "^.*[#/]", "") AS ?res).
     }}
     """
+
+
+def get_prior_task_question(verb: str) -> str:
+    return f"When {verb} a specific fruit or vegetable, what other cutting task - if any - should be executed before?"
 
 
 # Prefixes: owl, cut, soma, rdfs
@@ -107,6 +91,10 @@ def get_repetitions_query(verb: str) -> str:
         }}
     }}
     """
+
+
+def get_repetitions_question(verb: str) -> str:
+    return f"When {verb} a specific fruit or vegetable, how many cuts need to be made - exactly one or more than one?"
 
 
 # Prefixes: owl, soma, cut, rdf, rdfs
@@ -137,3 +125,7 @@ def get_action_target_query(verb: str) -> str:
         }}
     }}
     """
+
+
+def get_action_target_question(verb: str) -> str:
+    return f"When {verb} a specific fruit or vegetable, what is the target to perform the object on - the whole food or only a specific part?"
