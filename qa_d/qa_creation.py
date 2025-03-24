@@ -13,12 +13,10 @@ response = requests.get(url)
 g = Graph()
 g.parse(data=response.content, format='xml')
 
-# define prefixes to be used in the queries
 CUT = Namespace("http://www.ease-crc.org/ont/food_cutting#")
 OBO = Namespace("http://purl.obolibrary.org/obo/")
 SOMA = Namespace("http://www.ease-crc.org/ont/SOMA.owl#")
 SIT_AWARE = Namespace("http://www.ease-crc.org/ont/situation_awareness#")
-# DUL = Namespace("http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#")
 
 g.bind("owl", OWL)
 g.bind("rdf", RDF)
@@ -26,7 +24,6 @@ g.bind("rdfs", RDFS)
 g.bind("soma", SOMA)
 g.bind("sit_aware", SIT_AWARE)
 g.bind("cut", CUT)
-# g.bind("dul", DUL)
 g.bind("obo", OBO)
 
 food_qas = get_qas_for_food(g)

@@ -23,7 +23,7 @@ def get_qas_for_taks(graph: Graph) -> (str, str):
     res = []
     for task, iri in tasks.items():
         for row in graph.query(get_cutting_position_query(iri)):
-            if row.res == 'SlicingPosition':
+            if str(row.res) == 'SlicingPosition':
                 res.append((get_cutting_position_question(task), 'End'))
             else:
                 res.append((get_cutting_position_question(task), 'Middle'))
