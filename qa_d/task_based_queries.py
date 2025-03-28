@@ -23,15 +23,19 @@ def get_qas_for_taks(graph: Graph) -> (str, str):
     res = []
     for task, iri in tasks.items():
         l_b = len(res)
+        # Cutting position
         for row in graph.query(get_cutting_position_query(iri)):
             if str(row.res) == 'SlicingPosition':
                 res.append((get_cutting_position_question(task), 'End'))
             else:
                 res.append((get_cutting_position_question(task), 'Middle'))
+        # Prior task to execute
         for row in graph.query(get_prior_task_query(iri)):
             res.append((get_prior_task_question(task), row.res))
+        # Repetitions
         for row in graph.query(get_repetitions_query(iri)):
             res.append((get_repetitions_question(task), row.res))
+        # Input form
         inputs = graph.query(get_input_form_query(iri))
         ins = set()
         for row in inputs:
@@ -40,6 +44,12 @@ def get_qas_for_taks(graph: Graph) -> (str, str):
             else:
                 ins.add(str(row.res))
         res.append((get_input_form_question(task), " or ".join(ins)))
+        # Output form
+        outputs = graph.query(get_result_obj_query(iri))
+        outs = set()
+        for row in outputs:
+            outs.add(f"{row.cardinality} {str(row.res)}")
+        res.append((get_result_obj_question(task), " and ".join(outs)))
         print(f"{len(res) - l_b} new Questions added for {task}")
     return res
 
@@ -145,3 +155,37 @@ def get_input_form_query(verb: str) -> str:
 
 def get_input_form_question(verb: str) -> str:
     return f"When {verb} a specific fruit or vegetable, what is form of the input to perform the action on?"
+
+# Prefixes: owl, soma, cut, rdf, rdfs
+def get_result_obj_query(verb: str) -> str:
+    return f"""
+    SELECT ?res ?cardinality WHERE {{
+        {{
+            {verb} rdfs:subClassOf* ?inter_node.
+            ?inter_node owl:intersectionOf ?in_res_node.
+            ?in_res_node rdf:rest*/rdf:first ?result_node.
+            ?result_node owl:onProperty cut:hasResultObject.
+            # Handling "someValuesFrom" (no explicit cardinality)
+            OPTIONAL {{
+                ?result_node owl:someValuesFrom ?target.
+                BIND("some" AS ?cardinality).
+            }}
+            # Handling "exactly X" constraints (qualified cardinality)
+            OPTIONAL {{
+                ?result_node owl:qualifiedCardinality ?card.
+                ?result_node owl:onClass ?target.
+                BIND(STR(?card) AS ?cardinality).
+            }}
+            # Handling "exactly X" constraints (non-qualified cardinality)
+            OPTIONAL {{
+                ?result_node owl:cardinality ?card.
+                BIND(STR(?card) AS ?cardinality).
+            }}
+            BIND(REPLACE(STR(?target), "^.*[#/]", "") AS ?res).
+        }}
+    }}
+    """
+
+
+def get_result_obj_question(verb: str) -> str:
+    return f"When {verb} a specific fruit or vegetable, what is form and amount of the resulting pieces?"
