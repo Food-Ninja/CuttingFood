@@ -22,6 +22,7 @@ tasks = {
 def get_qas_for_taks(graph: Graph) -> (str, str):
     res = []
     for task, iri in tasks.items():
+        l_b = len(res)
         for row in graph.query(get_cutting_position_query(iri)):
             if str(row.res) == 'SlicingPosition':
                 res.append((get_cutting_position_question(task), 'End'))
@@ -31,8 +32,15 @@ def get_qas_for_taks(graph: Graph) -> (str, str):
             res.append((get_prior_task_question(task), row.res))
         for row in graph.query(get_repetitions_query(iri)):
             res.append((get_repetitions_question(task), row.res))
-        for row in graph.query(get_action_target_query(iri)):
-            res.append((get_action_target_question(task), row.res))
+        inputs = graph.query(get_input_form_query(iri))
+        ins = set()
+        for row in inputs:
+            if str(row.res) == "Food":
+                ins.add("Whole")
+            else:
+                ins.add(str(row.res))
+        res.append((get_input_form_question(task), " or ".join(ins)))
+        print(f"{len(res) - l_b} new Questions added for {task}")
     return res
 
 
@@ -98,7 +106,7 @@ def get_repetitions_question(verb: str) -> str:
 
 
 # Prefixes: owl, soma, cut, rdf, rdfs
-def get_action_target_query(verb: str) -> str:
+def get_input_form_query(verb: str) -> str:
     return f"""
     SELECT ?res WHERE {{
         {{
@@ -120,12 +128,20 @@ def get_action_target_query(verb: str) -> str:
             ?input_node owl:onProperty cut:hasInputObject.
             ?input_node owl:someValuesFrom ?targets_node.
             ?targets_node owl:unionOf ?union_node.
-            ?union_node rdf:first ?target.
-            BIND(REPLACE(STR(?target), "^.*[#/]", "") AS ?res).
+            # Recursive traversal of rdf:first and rdf:rest
+            {{
+                ?union_node rdf:first ?target.
+                BIND(REPLACE(STR(?target), "^.*[#/]", "") AS ?res).
+            }}
+            UNION
+            {{
+                ?union_node rdf:rest*/rdf:first ?target.
+                BIND(REPLACE(STR(?target), "^.*[#/]", "") AS ?res).
+            }}
         }}
     }}
     """
 
 
-def get_action_target_question(verb: str) -> str:
-    return f"When {verb} a specific fruit or vegetable, what is the target to perform the object on - the whole food or only a specific part?"
+def get_input_form_question(verb: str) -> str:
+    return f"When {verb} a specific fruit or vegetable, what is form of the input to perform the action on?"

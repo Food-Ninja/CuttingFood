@@ -128,51 +128,51 @@ Is a(n) Stem an anatomical part of a(n) tomato?,Yes
 "When quartering a specific fruit or vegetable, where should the knife be placed - in the middle or at the end of the object?",Middle
 "When quartering a specific fruit or vegetable, what other cutting task - if any - should be executed before?",Halving
 "When quartering a specific fruit or vegetable, how many cuts need to be made - exactly one or more than one?",exactly 1
-"When quartering a specific fruit or vegetable, what is the target to perform the object on - the whole food or only a specific part?",Halve
+"When quartering a specific fruit or vegetable, what is form of the input to perform the action on?",Halve
 "When julienning a specific fruit or vegetable, where should the knife be placed - in the middle or at the end of the object?",End
 "When julienning a specific fruit or vegetable, what other cutting task - if any - should be executed before?",Slicing
 "When julienning a specific fruit or vegetable, how many cuts need to be made - exactly one or more than one?",at least 1
-"When julienning a specific fruit or vegetable, what is the target to perform the object on - the whole food or only a specific part?",Slice
+"When julienning a specific fruit or vegetable, what is form of the input to perform the action on?",Slice
 "When halving a specific fruit or vegetable, where should the knife be placed - in the middle or at the end of the object?",Middle
 "When halving a specific fruit or vegetable, how many cuts need to be made - exactly one or more than one?",exactly 1
-"When halving a specific fruit or vegetable, what is the target to perform the object on - the whole food or only a specific part?",Food
+"When halving a specific fruit or vegetable, what is form of the input to perform the action on?",Whole
 "When dicing a specific fruit or vegetable, where should the knife be placed - in the middle or at the end of the object?",End
 "When dicing a specific fruit or vegetable, what other cutting task - if any - should be executed before?",Julienning
 "When dicing a specific fruit or vegetable, how many cuts need to be made - exactly one or more than one?",at least 1
-"When dicing a specific fruit or vegetable, what is the target to perform the object on - the whole food or only a specific part?",Stripe
+"When dicing a specific fruit or vegetable, what is form of the input to perform the action on?",Stripe
 "When cutting a specific fruit or vegetable, where should the knife be placed - in the middle or at the end of the object?",End
 "When cutting a specific fruit or vegetable, how many cuts need to be made - exactly one or more than one?",exactly 1
-"When cutting a specific fruit or vegetable, what is the target to perform the object on - the whole food or only a specific part?",Food
+"When cutting a specific fruit or vegetable, what is form of the input to perform the action on?",FoodPart or Whole
 "When slicing a specific fruit or vegetable, where should the knife be placed - in the middle or at the end of the object?",End
 "When slicing a specific fruit or vegetable, how many cuts need to be made - exactly one or more than one?",at least 1
-"When slicing a specific fruit or vegetable, what is the target to perform the object on - the whole food or only a specific part?",Food
+"When slicing a specific fruit or vegetable, what is form of the input to perform the action on?",FoodPart or Whole
 "When snipping a specific fruit or vegetable, where should the knife be placed - in the middle or at the end of the object?",End
 "When snipping a specific fruit or vegetable, how many cuts need to be made - exactly one or more than one?",at least 1
-"When snipping a specific fruit or vegetable, what is the target to perform the object on - the whole food or only a specific part?",Food
+"When snipping a specific fruit or vegetable, what is form of the input to perform the action on?",FoodPart or Whole
 "When slivering a specific fruit or vegetable, where should the knife be placed - in the middle or at the end of the object?",End
 "When slivering a specific fruit or vegetable, how many cuts need to be made - exactly one or more than one?",at least 1
-"When slivering a specific fruit or vegetable, what is the target to perform the object on - the whole food or only a specific part?",Food
+"When slivering a specific fruit or vegetable, what is form of the input to perform the action on?",FoodPart or Whole
 "When sawing a specific fruit or vegetable, where should the knife be placed - in the middle or at the end of the object?",End
 "When sawing a specific fruit or vegetable, how many cuts need to be made - exactly one or more than one?",exactly 1
-"When sawing a specific fruit or vegetable, what is the target to perform the object on - the whole food or only a specific part?",Food
+"When sawing a specific fruit or vegetable, what is form of the input to perform the action on?",FoodPart or Whole
 "When paring a specific fruit or vegetable, where should the knife be placed - in the middle or at the end of the object?",End
 "When paring a specific fruit or vegetable, how many cuts need to be made - exactly one or more than one?",exactly 1
-"When paring a specific fruit or vegetable, what is the target to perform the object on - the whole food or only a specific part?",Food
+"When paring a specific fruit or vegetable, what is form of the input to perform the action on?",FoodPart or Whole
 "When carving a specific fruit or vegetable, where should the knife be placed - in the middle or at the end of the object?",End
 "When carving a specific fruit or vegetable, how many cuts need to be made - exactly one or more than one?",exactly 1
-"When carving a specific fruit or vegetable, what is the target to perform the object on - the whole food or only a specific part?",Food
+"When carving a specific fruit or vegetable, what is form of the input to perform the action on?",FoodPart or Whole
 "When mincing a specific fruit or vegetable, where should the knife be placed - in the middle or at the end of the object?",End
 "When mincing a specific fruit or vegetable, what other cutting task - if any - should be executed before?",Julienning
 "When mincing a specific fruit or vegetable, how many cuts need to be made - exactly one or more than one?",at least 1
-"When mincing a specific fruit or vegetable, what is the target to perform the object on - the whole food or only a specific part?",Stripe
+"When mincing a specific fruit or vegetable, what is form of the input to perform the action on?",Stripe
 "When cubing a specific fruit or vegetable, where should the knife be placed - in the middle or at the end of the object?",End
 "When cubing a specific fruit or vegetable, what other cutting task - if any - should be executed before?",Julienning
 "When cubing a specific fruit or vegetable, how many cuts need to be made - exactly one or more than one?",at least 1
-"When cubing a specific fruit or vegetable, what is the target to perform the object on - the whole food or only a specific part?",Stripe
+"When cubing a specific fruit or vegetable, what is form of the input to perform the action on?",Stripe
 "When chopping a specific fruit or vegetable, where should the knife be placed - in the middle or at the end of the object?",End
 "When chopping a specific fruit or vegetable, what other cutting task - if any - should be executed before?",Julienning
 "When chopping a specific fruit or vegetable, how many cuts need to be made - exactly one or more than one?",at least 1
-"When chopping a specific fruit or vegetable, what is the target to perform the object on - the whole food or only a specific part?",Stripe
+"When chopping a specific fruit or vegetable, what is form of the input to perform the action on?",Stripe
 "When dividing a specific fruit or vegetable, where should the knife be placed - in the middle or at the end of the object?",Middle
 "When dividing a specific fruit or vegetable, how many cuts need to be made - exactly one or more than one?",exactly 1
-"When dividing a specific fruit or vegetable, what is the target to perform the object on - the whole food or only a specific part?",Food
+"When dividing a specific fruit or vegetable, what is form of the input to perform the action on?",Whole

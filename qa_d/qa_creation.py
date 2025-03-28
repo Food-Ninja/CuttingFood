@@ -29,7 +29,7 @@ g.bind("obo", OBO)
 food_qas = get_qas_for_food(g)
 task_qas = get_qas_for_taks(g)
 
-with open("qa.csv", "w", newline="", encoding="utf-8") as file:
+with open("qa_d/qa.csv", "w", newline="", encoding="utf-8") as file:
     writer = csv.writer(file)
     writer.writerow(["Question", "Answer"])
     writer.writerows(food_qas)
