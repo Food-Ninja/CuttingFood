@@ -1,3 +1,5 @@
+import re
+
 from rdflib import Graph
 
 foods = {
@@ -60,7 +62,7 @@ def get_part_connection_query(food: str, part: str) -> str:
 
 
 def get_fruit_part_question(food: str, part: str) -> str:
-    return f"Is a(n) {part} an anatomical part of a(n) {food}?"
+    return f"Is {get_article(part)} {part} an anatomical part of {get_article(food)} {food}?"
 
 
 # Prefixes: owl, soma, rdf, rdfs, sit_aware
@@ -84,7 +86,7 @@ def get_cutting_tool_query(food: str) -> str:
 
 
 def get_cutting_tool_question(food: str) -> str:
-    return f"When cutting a(n) {food}, what tool should be used?"
+    return f"When cutting {get_article(food)} {food}, what tool should be used?"
 
 
 # Prefixes: owl, cut, soma, rdf, rdfs
@@ -108,4 +110,13 @@ def get_peeling_tool_query(food: str) -> str:
 
 
 def get_peeling_tool_question(food: str) -> str:
-    return f"When peeling a(n) {food}, what tool should be used?"
+    return f"When peeling {get_article(food)} {food}, what tool should be used?"
+
+
+def get_article(word: str) -> str:
+    if re.match(r'(?i)^h\w*', word):
+        return "an"
+    elif re.match(r'(?i)^[aeiou]', word):
+        return "an"
+    else:
+        return "a"
