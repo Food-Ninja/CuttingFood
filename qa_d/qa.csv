@@ -1,219 +1,219 @@
-Question,Answer
-Is a Core an anatomical part of an almond?,No
-Is a Shell an anatomical part of an almond?,Yes
-"What is the edibility of an almond's Shell - can it be eaten, should it be avoided or must it be avoided?",MustBeAvoided
-Is a Peel an anatomical part of an almond?,No
-Is a Stem an anatomical part of an almond?,No
-"When cutting an almond, what tool should be used?",Knife
-"When peeling an almond, what tool should be used?",Nutcracker
-Is a Core an anatomical part of an apple?,Yes
-"What is the edibility of an apple's Core - can it be eaten, should it be avoided or must it be avoided?",ShouldBeAvoided
-Is a Shell an anatomical part of an apple?,No
-Is a Peel an anatomical part of an apple?,Yes
-"What is the edibility of an apple's Peel - can it be eaten, should it be avoided or must it be avoided?",Edible
-Is a Stem an anatomical part of an apple?,No
-"When cutting an apple, what tool should be used?",CuttingTool
-"When peeling an apple, what tool should be used?",Peeler
-Is a Core an anatomical part of an avocado?,Yes
-"What is the edibility of an avocado's Core - can it be eaten, should it be avoided or must it be avoided?",MustBeAvoided
-Is a Shell an anatomical part of an avocado?,No
-Is a Peel an anatomical part of an avocado?,Yes
-"What is the edibility of an avocado's Peel - can it be eaten, should it be avoided or must it be avoided?",MustBeAvoided
-Is a Stem an anatomical part of an avocado?,No
-"When cutting an avocado, what tool should be used?",Knife
-"When peeling an avocado, what tool should be used?",Knife
-Is a Core an anatomical part of a banana?,No
-Is a Shell an anatomical part of a banana?,No
-Is a Peel an anatomical part of a banana?,Yes
-"What is the edibility of a banana's Peel - can it be eaten, should it be avoided or must it be avoided?",MustBeAvoided
-Is a Stem an anatomical part of a banana?,No
-"When cutting a banana, what tool should be used?",Knife
-"When peeling a banana, what tool should be used?",Hand
-Is a Core an anatomical part of a bean?,No
-Is a Shell an anatomical part of a bean?,No
-Is a Peel an anatomical part of a bean?,No
-Is a Stem an anatomical part of a bean?,No
-"When cutting a bean, what tool should be used?",Knife
-Is a Core an anatomical part of a cherry?,No
-Is a Shell an anatomical part of a cherry?,No
-Is a Peel an anatomical part of a cherry?,No
-Is a Stem an anatomical part of a cherry?,No
-Is a Core an anatomical part of a citron?,No
-Is a Shell an anatomical part of a citron?,No
-Is a Peel an anatomical part of a citron?,Yes
-"What is the edibility of a citron's Peel - can it be eaten, should it be avoided or must it be avoided?",MustBeAvoided
-Is a Stem an anatomical part of a citron?,No
-"When cutting a citron, what tool should be used?",Knife
-"When peeling a citron, what tool should be used?",Hand
-Is a Core an anatomical part of a coconut?,No
-Is a Shell an anatomical part of a coconut?,Yes
-"What is the edibility of a coconut's Shell - can it be eaten, should it be avoided or must it be avoided?",MustBeAvoided
-Is a Peel an anatomical part of a coconut?,No
-Is a Stem an anatomical part of a coconut?,No
-"When cutting a coconut, what tool should be used?",Knife
-"When peeling a coconut, what tool should be used?",Nutcracker
-Is a Core an anatomical part of a cucumber?,No
-Is a Shell an anatomical part of a cucumber?,No
-Is a Peel an anatomical part of a cucumber?,Yes
-"What is the edibility of a cucumber's Peel - can it be eaten, should it be avoided or must it be avoided?",Edible
-Is a Stem an anatomical part of a cucumber?,Yes
-"What is the edibility of a cucumber's Stem - can it be eaten, should it be avoided or must it be avoided?",ShouldBeAvoided
-"When cutting a cucumber, what tool should be used?",Knife
-"When peeling a cucumber, what tool should be used?",Peeler
-Is a Core an anatomical part of a kiwi?,No
-Is a Shell an anatomical part of a kiwi?,No
-Is a Peel an anatomical part of a kiwi?,Yes
-"What is the edibility of a kiwi's Peel - can it be eaten, should it be avoided or must it be avoided?",Edible
-Is a Stem an anatomical part of a kiwi?,No
-"When cutting a kiwi, what tool should be used?",Knife
-"When peeling a kiwi, what tool should be used?",Knife
-Is a Core an anatomical part of a kumquat?,No
-Is a Shell an anatomical part of a kumquat?,No
-Is a Peel an anatomical part of a kumquat?,Yes
-"What is the edibility of a kumquat's Peel - can it be eaten, should it be avoided or must it be avoided?",MustBeAvoided
-Is a Stem an anatomical part of a kumquat?,No
-"When cutting a kumquat, what tool should be used?",Knife
-"When peeling a kumquat, what tool should be used?",Hand
-Is a Core an anatomical part of a lemon?,No
-Is a Shell an anatomical part of a lemon?,No
-Is a Peel an anatomical part of a lemon?,Yes
-"What is the edibility of a lemon's Peel - can it be eaten, should it be avoided or must it be avoided?",MustBeAvoided
-Is a Stem an anatomical part of a lemon?,No
-"When cutting a lemon, what tool should be used?",Knife
-"When peeling a lemon, what tool should be used?",Hand
-Is a Core an anatomical part of a lime?,No
-Is a Shell an anatomical part of a lime?,No
-Is a Peel an anatomical part of a lime?,Yes
-"What is the edibility of a lime's Peel - can it be eaten, should it be avoided or must it be avoided?",MustBeAvoided
-Is a Stem an anatomical part of a lime?,No
-"When cutting a lime, what tool should be used?",Knife
-"When peeling a lime, what tool should be used?",Hand
-Is a Core an anatomical part of an olive?,Yes
-"What is the edibility of an olive's Core - can it be eaten, should it be avoided or must it be avoided?",MustBeAvoided
-Is a Shell an anatomical part of an olive?,No
-Is a Peel an anatomical part of an olive?,No
-Is a Stem an anatomical part of an olive?,No
-"When cutting an olive, what tool should be used?",Knife
-Is a Core an anatomical part of an orange?,No
-Is a Shell an anatomical part of an orange?,No
-Is a Peel an anatomical part of an orange?,Yes
-"What is the edibility of an orange's Peel - can it be eaten, should it be avoided or must it be avoided?",MustBeAvoided
-"What is the edibility of an orange's Peel - can it be eaten, should it be avoided or must it be avoided?",MustBeAvoided
-Is a Stem an anatomical part of an orange?,No
-"When cutting an orange, what tool should be used?",Knife
-"When cutting an orange, what tool should be used?",Knife
-"When peeling an orange, what tool should be used?",Hand
-"When peeling an orange, what tool should be used?",Hand
-Is a Core an anatomical part of a peach?,Yes
-"What is the edibility of a peach's Core - can it be eaten, should it be avoided or must it be avoided?",MustBeAvoided
-Is a Shell an anatomical part of a peach?,No
-Is a Peel an anatomical part of a peach?,No
-Is a Stem an anatomical part of a peach?,No
-"When cutting a peach, what tool should be used?",Knife
-Is a Core an anatomical part of a pepper?,No
-Is a Shell an anatomical part of a pepper?,No
-Is a Peel an anatomical part of a pepper?,No
-Is a Stem an anatomical part of a pepper?,Yes
-"What is the edibility of a pepper's Stem - can it be eaten, should it be avoided or must it be avoided?",ShouldBeAvoided
-"When cutting a pepper, what tool should be used?",Knife
-Is a Core an anatomical part of a pineapple?,Yes
-"What is the edibility of a pineapple's Core - can it be eaten, should it be avoided or must it be avoided?",Edible
-Is a Shell an anatomical part of a pineapple?,No
-Is a Peel an anatomical part of a pineapple?,Yes
-"What is the edibility of a pineapple's Peel - can it be eaten, should it be avoided or must it be avoided?",MustBeAvoided
-Is a Stem an anatomical part of a pineapple?,No
-"When cutting a pineapple, what tool should be used?",Knife
-"When peeling a pineapple, what tool should be used?",Knife
-Is a Core an anatomical part of a pumpkin?,No
-Is a Shell an anatomical part of a pumpkin?,No
-Is a Peel an anatomical part of a pumpkin?,Yes
-"What is the edibility of a pumpkin's Peel - can it be eaten, should it be avoided or must it be avoided?",ShouldBeAvoided
-Is a Stem an anatomical part of a pumpkin?,No
-"When cutting a pumpkin, what tool should be used?",Knife
-"When peeling a pumpkin, what tool should be used?",Knife
-Is a Core an anatomical part of a strawberry?,No
-Is a Shell an anatomical part of a strawberry?,No
-Is a Peel an anatomical part of a strawberry?,No
-Is a Stem an anatomical part of a strawberry?,Yes
-"What is the edibility of a strawberry's Stem - can it be eaten, should it be avoided or must it be avoided?",ShouldBeAvoided
-"When cutting a strawberry, what tool should be used?",Knife
-Is a Core an anatomical part of a squash?,No
-Is a Shell an anatomical part of a squash?,No
-Is a Peel an anatomical part of a squash?,Yes
-"What is the edibility of a squash's Peel - can it be eaten, should it be avoided or must it be avoided?",ShouldBeAvoided
-Is a Stem an anatomical part of a squash?,No
-"When cutting a squash, what tool should be used?",Knife
-"When peeling a squash, what tool should be used?",Knife
-Is a Core an anatomical part of a tomato?,No
-Is a Shell an anatomical part of a tomato?,No
-Is a Peel an anatomical part of a tomato?,Yes
-"What is the edibility of a tomato's Peel - can it be eaten, should it be avoided or must it be avoided?",Edible
-Is a Stem an anatomical part of a tomato?,Yes
-"What is the edibility of a tomato's Stem - can it be eaten, should it be avoided or must it be avoided?",ShouldBeAvoided
-"When cutting a tomato, what tool should be used?",Knife
-"When quartering a specific fruit or vegetable, where should the knife be placed - in the middle or at the end of the object?",Middle
-"When quartering a specific fruit or vegetable, what other cutting task - if any - should be executed before?",Halving
-"When quartering a specific fruit or vegetable, how many cuts need to be made - exactly one or more than one?",exactly 1
-"When quartering a specific fruit or vegetable, what is form of the input to perform the action on?",Halve
-"When quartering a specific fruit or vegetable, what is form and amount of the resulting pieces?",2 Quarter
-"When julienning a specific fruit or vegetable, where should the knife be placed - in the middle or at the end of the object?",End
-"When julienning a specific fruit or vegetable, what other cutting task - if any - should be executed before?",Slicing
-"When julienning a specific fruit or vegetable, how many cuts need to be made - exactly one or more than one?",at least 1
-"When julienning a specific fruit or vegetable, what is form of the input to perform the action on?",Slice
-"When julienning a specific fruit or vegetable, what is form and amount of the resulting pieces?",1 Stripe and 1 Slice
-"When halving a specific fruit or vegetable, where should the knife be placed - in the middle or at the end of the object?",Middle
-"When halving a specific fruit or vegetable, how many cuts need to be made - exactly one or more than one?",exactly 1
-"When halving a specific fruit or vegetable, what is form of the input to perform the action on?",Whole
-"When halving a specific fruit or vegetable, what is form and amount of the resulting pieces?",2 Halve
-"When dicing a specific fruit or vegetable, where should the knife be placed - in the middle or at the end of the object?",End
-"When dicing a specific fruit or vegetable, what other cutting task - if any - should be executed before?",Julienning
-"When dicing a specific fruit or vegetable, how many cuts need to be made - exactly one or more than one?",at least 1
-"When dicing a specific fruit or vegetable, what is form of the input to perform the action on?",Stripe
-"When dicing a specific fruit or vegetable, what is form and amount of the resulting pieces?",1 Stripe and 1 Cube
-"When cutting a specific fruit or vegetable, where should the knife be placed - in the middle or at the end of the object?",End
-"When cutting a specific fruit or vegetable, how many cuts need to be made - exactly one or more than one?",exactly 1
-"When cutting a specific fruit or vegetable, what is form of the input to perform the action on?",FoodPart or Whole
-"When cutting a specific fruit or vegetable, what is form and amount of the resulting pieces?",1 FoodPart and 1 Slice
-"When slicing a specific fruit or vegetable, where should the knife be placed - in the middle or at the end of the object?",End
-"When slicing a specific fruit or vegetable, how many cuts need to be made - exactly one or more than one?",at least 1
-"When slicing a specific fruit or vegetable, what is form of the input to perform the action on?",FoodPart or Whole
-"When slicing a specific fruit or vegetable, what is form and amount of the resulting pieces?",1 FoodPart and 1 Slice
-"When snipping a specific fruit or vegetable, where should the knife be placed - in the middle or at the end of the object?",End
-"When snipping a specific fruit or vegetable, how many cuts need to be made - exactly one or more than one?",at least 1
-"When snipping a specific fruit or vegetable, what is form of the input to perform the action on?",FoodPart or Whole
-"When snipping a specific fruit or vegetable, what is form and amount of the resulting pieces?",1 FoodPart and 1 Slice
-"When slivering a specific fruit or vegetable, where should the knife be placed - in the middle or at the end of the object?",End
-"When slivering a specific fruit or vegetable, how many cuts need to be made - exactly one or more than one?",at least 1
-"When slivering a specific fruit or vegetable, what is form of the input to perform the action on?",FoodPart or Whole
-"When slivering a specific fruit or vegetable, what is form and amount of the resulting pieces?",1 FoodPart and 1 Slice
-"When sawing a specific fruit or vegetable, where should the knife be placed - in the middle or at the end of the object?",End
-"When sawing a specific fruit or vegetable, how many cuts need to be made - exactly one or more than one?",exactly 1
-"When sawing a specific fruit or vegetable, what is form of the input to perform the action on?",FoodPart or Whole
-"When sawing a specific fruit or vegetable, what is form and amount of the resulting pieces?",1 FoodPart and 1 Slice
-"When paring a specific fruit or vegetable, where should the knife be placed - in the middle or at the end of the object?",End
-"When paring a specific fruit or vegetable, how many cuts need to be made - exactly one or more than one?",exactly 1
-"When paring a specific fruit or vegetable, what is form of the input to perform the action on?",FoodPart or Whole
-"When paring a specific fruit or vegetable, what is form and amount of the resulting pieces?",1 FoodPart and 1 Slice
-"When carving a specific fruit or vegetable, where should the knife be placed - in the middle or at the end of the object?",End
-"When carving a specific fruit or vegetable, how many cuts need to be made - exactly one or more than one?",exactly 1
-"When carving a specific fruit or vegetable, what is form of the input to perform the action on?",FoodPart or Whole
-"When carving a specific fruit or vegetable, what is form and amount of the resulting pieces?",1 FoodPart and 1 Slice
-"When mincing a specific fruit or vegetable, where should the knife be placed - in the middle or at the end of the object?",End
-"When mincing a specific fruit or vegetable, what other cutting task - if any - should be executed before?",Julienning
-"When mincing a specific fruit or vegetable, how many cuts need to be made - exactly one or more than one?",at least 1
-"When mincing a specific fruit or vegetable, what is form of the input to perform the action on?",Stripe
-"When mincing a specific fruit or vegetable, what is form and amount of the resulting pieces?",1 Stripe and 1 Cube
-"When cubing a specific fruit or vegetable, where should the knife be placed - in the middle or at the end of the object?",End
-"When cubing a specific fruit or vegetable, what other cutting task - if any - should be executed before?",Julienning
-"When cubing a specific fruit or vegetable, how many cuts need to be made - exactly one or more than one?",at least 1
-"When cubing a specific fruit or vegetable, what is form of the input to perform the action on?",Stripe
-"When cubing a specific fruit or vegetable, what is form and amount of the resulting pieces?",1 Stripe and 1 Cube
-"When chopping a specific fruit or vegetable, where should the knife be placed - in the middle or at the end of the object?",End
-"When chopping a specific fruit or vegetable, what other cutting task - if any - should be executed before?",Julienning
-"When chopping a specific fruit or vegetable, how many cuts need to be made - exactly one or more than one?",at least 1
-"When chopping a specific fruit or vegetable, what is form of the input to perform the action on?",Stripe
-"When chopping a specific fruit or vegetable, what is form and amount of the resulting pieces?",1 Stripe and 1 Cube
-"When dividing a specific fruit or vegetable, where should the knife be placed - in the middle or at the end of the object?",Middle
-"When dividing a specific fruit or vegetable, how many cuts need to be made - exactly one or more than one?",exactly 1
-"When dividing a specific fruit or vegetable, what is form of the input to perform the action on?",Whole
-"When dividing a specific fruit or vegetable, what is form and amount of the resulting pieces?",2 Halve
+Question,Answer,Category
+Is a Core an anatomical part of an almond?,No,fruit_parts
+Is a Shell an anatomical part of an almond?,Yes,fruit_parts
+"What is the edibility of an almond's Shell - can it be eaten, should it be avoided or must it be avoided?",MustBeAvoided,part_edibility
+Is a Peel an anatomical part of an almond?,No,fruit_parts
+Is a Stem an anatomical part of an almond?,No,fruit_parts
+"When cutting an almond, what tool should be used?",Knife,cutting_tool
+"When peeling an almond, what tool should be used?",Nutcracker,peeling_tool
+Is a Core an anatomical part of an apple?,Yes,fruit_parts
+"What is the edibility of an apple's Core - can it be eaten, should it be avoided or must it be avoided?",ShouldBeAvoided,part_edibility
+Is a Shell an anatomical part of an apple?,No,fruit_parts
+Is a Peel an anatomical part of an apple?,Yes,fruit_parts
+"What is the edibility of an apple's Peel - can it be eaten, should it be avoided or must it be avoided?",Edible,part_edibility
+Is a Stem an anatomical part of an apple?,No,fruit_parts
+"When cutting an apple, what tool should be used?",CuttingTool,cutting_tool
+"When peeling an apple, what tool should be used?",Peeler,peeling_tool
+Is a Core an anatomical part of an avocado?,Yes,fruit_parts
+"What is the edibility of an avocado's Core - can it be eaten, should it be avoided or must it be avoided?",MustBeAvoided,part_edibility
+Is a Shell an anatomical part of an avocado?,No,fruit_parts
+Is a Peel an anatomical part of an avocado?,Yes,fruit_parts
+"What is the edibility of an avocado's Peel - can it be eaten, should it be avoided or must it be avoided?",MustBeAvoided,part_edibility
+Is a Stem an anatomical part of an avocado?,No,fruit_parts
+"When cutting an avocado, what tool should be used?",Knife,cutting_tool
+"When peeling an avocado, what tool should be used?",Knife,peeling_tool
+Is a Core an anatomical part of a banana?,No,fruit_parts
+Is a Shell an anatomical part of a banana?,No,fruit_parts
+Is a Peel an anatomical part of a banana?,Yes,fruit_parts
+"What is the edibility of a banana's Peel - can it be eaten, should it be avoided or must it be avoided?",MustBeAvoided,part_edibility
+Is a Stem an anatomical part of a banana?,No,fruit_parts
+"When cutting a banana, what tool should be used?",Knife,cutting_tool
+"When peeling a banana, what tool should be used?",Hand,peeling_tool
+Is a Core an anatomical part of a bean?,No,fruit_parts
+Is a Shell an anatomical part of a bean?,No,fruit_parts
+Is a Peel an anatomical part of a bean?,No,fruit_parts
+Is a Stem an anatomical part of a bean?,No,fruit_parts
+"When cutting a bean, what tool should be used?",Knife,cutting_tool
+Is a Core an anatomical part of a cherry?,No,fruit_parts
+Is a Shell an anatomical part of a cherry?,No,fruit_parts
+Is a Peel an anatomical part of a cherry?,No,fruit_parts
+Is a Stem an anatomical part of a cherry?,No,fruit_parts
+Is a Core an anatomical part of a citron?,No,fruit_parts
+Is a Shell an anatomical part of a citron?,No,fruit_parts
+Is a Peel an anatomical part of a citron?,Yes,fruit_parts
+"What is the edibility of a citron's Peel - can it be eaten, should it be avoided or must it be avoided?",MustBeAvoided,part_edibility
+Is a Stem an anatomical part of a citron?,No,fruit_parts
+"When cutting a citron, what tool should be used?",Knife,cutting_tool
+"When peeling a citron, what tool should be used?",Hand,peeling_tool
+Is a Core an anatomical part of a coconut?,No,fruit_parts
+Is a Shell an anatomical part of a coconut?,Yes,fruit_parts
+"What is the edibility of a coconut's Shell - can it be eaten, should it be avoided or must it be avoided?",MustBeAvoided,part_edibility
+Is a Peel an anatomical part of a coconut?,No,fruit_parts
+Is a Stem an anatomical part of a coconut?,No,fruit_parts
+"When cutting a coconut, what tool should be used?",Knife,cutting_tool
+"When peeling a coconut, what tool should be used?",Nutcracker,peeling_tool
+Is a Core an anatomical part of a cucumber?,No,fruit_parts
+Is a Shell an anatomical part of a cucumber?,No,fruit_parts
+Is a Peel an anatomical part of a cucumber?,Yes,fruit_parts
+"What is the edibility of a cucumber's Peel - can it be eaten, should it be avoided or must it be avoided?",Edible,part_edibility
+Is a Stem an anatomical part of a cucumber?,Yes,fruit_parts
+"What is the edibility of a cucumber's Stem - can it be eaten, should it be avoided or must it be avoided?",ShouldBeAvoided,part_edibility
+"When cutting a cucumber, what tool should be used?",Knife,cutting_tool
+"When peeling a cucumber, what tool should be used?",Peeler,peeling_tool
+Is a Core an anatomical part of a kiwi?,No,fruit_parts
+Is a Shell an anatomical part of a kiwi?,No,fruit_parts
+Is a Peel an anatomical part of a kiwi?,Yes,fruit_parts
+"What is the edibility of a kiwi's Peel - can it be eaten, should it be avoided or must it be avoided?",Edible,part_edibility
+Is a Stem an anatomical part of a kiwi?,No,fruit_parts
+"When cutting a kiwi, what tool should be used?",Knife,cutting_tool
+"When peeling a kiwi, what tool should be used?",Knife,peeling_tool
+Is a Core an anatomical part of a kumquat?,No,fruit_parts
+Is a Shell an anatomical part of a kumquat?,No,fruit_parts
+Is a Peel an anatomical part of a kumquat?,Yes,fruit_parts
+"What is the edibility of a kumquat's Peel - can it be eaten, should it be avoided or must it be avoided?",MustBeAvoided,part_edibility
+Is a Stem an anatomical part of a kumquat?,No,fruit_parts
+"When cutting a kumquat, what tool should be used?",Knife,cutting_tool
+"When peeling a kumquat, what tool should be used?",Hand,peeling_tool
+Is a Core an anatomical part of a lemon?,No,fruit_parts
+Is a Shell an anatomical part of a lemon?,No,fruit_parts
+Is a Peel an anatomical part of a lemon?,Yes,fruit_parts
+"What is the edibility of a lemon's Peel - can it be eaten, should it be avoided or must it be avoided?",MustBeAvoided,part_edibility
+Is a Stem an anatomical part of a lemon?,No,fruit_parts
+"When cutting a lemon, what tool should be used?",Knife,cutting_tool
+"When peeling a lemon, what tool should be used?",Hand,peeling_tool
+Is a Core an anatomical part of a lime?,No,fruit_parts
+Is a Shell an anatomical part of a lime?,No,fruit_parts
+Is a Peel an anatomical part of a lime?,Yes,fruit_parts
+"What is the edibility of a lime's Peel - can it be eaten, should it be avoided or must it be avoided?",MustBeAvoided,part_edibility
+Is a Stem an anatomical part of a lime?,No,fruit_parts
+"When cutting a lime, what tool should be used?",Knife,cutting_tool
+"When peeling a lime, what tool should be used?",Hand,peeling_tool
+Is a Core an anatomical part of an olive?,Yes,fruit_parts
+"What is the edibility of an olive's Core - can it be eaten, should it be avoided or must it be avoided?",MustBeAvoided,part_edibility
+Is a Shell an anatomical part of an olive?,No,fruit_parts
+Is a Peel an anatomical part of an olive?,No,fruit_parts
+Is a Stem an anatomical part of an olive?,No,fruit_parts
+"When cutting an olive, what tool should be used?",Knife,cutting_tool
+Is a Core an anatomical part of an orange?,No,fruit_parts
+Is a Shell an anatomical part of an orange?,No,fruit_parts
+Is a Peel an anatomical part of an orange?,Yes,fruit_parts
+"What is the edibility of an orange's Peel - can it be eaten, should it be avoided or must it be avoided?",MustBeAvoided,part_edibility
+"What is the edibility of an orange's Peel - can it be eaten, should it be avoided or must it be avoided?",MustBeAvoided,part_edibility
+Is a Stem an anatomical part of an orange?,No,fruit_parts
+"When cutting an orange, what tool should be used?",Knife,cutting_tool
+"When cutting an orange, what tool should be used?",Knife,cutting_tool
+"When peeling an orange, what tool should be used?",Hand,peeling_tool
+"When peeling an orange, what tool should be used?",Hand,peeling_tool
+Is a Core an anatomical part of a peach?,Yes,fruit_parts
+"What is the edibility of a peach's Core - can it be eaten, should it be avoided or must it be avoided?",MustBeAvoided,part_edibility
+Is a Shell an anatomical part of a peach?,No,fruit_parts
+Is a Peel an anatomical part of a peach?,No,fruit_parts
+Is a Stem an anatomical part of a peach?,No,fruit_parts
+"When cutting a peach, what tool should be used?",Knife,cutting_tool
+Is a Core an anatomical part of a pepper?,No,fruit_parts
+Is a Shell an anatomical part of a pepper?,No,fruit_parts
+Is a Peel an anatomical part of a pepper?,No,fruit_parts
+Is a Stem an anatomical part of a pepper?,Yes,fruit_parts
+"What is the edibility of a pepper's Stem - can it be eaten, should it be avoided or must it be avoided?",ShouldBeAvoided,part_edibility
+"When cutting a pepper, what tool should be used?",Knife,cutting_tool
+Is a Core an anatomical part of a pineapple?,Yes,fruit_parts
+"What is the edibility of a pineapple's Core - can it be eaten, should it be avoided or must it be avoided?",Edible,part_edibility
+Is a Shell an anatomical part of a pineapple?,No,fruit_parts
+Is a Peel an anatomical part of a pineapple?,Yes,fruit_parts
+"What is the edibility of a pineapple's Peel - can it be eaten, should it be avoided or must it be avoided?",MustBeAvoided,part_edibility
+Is a Stem an anatomical part of a pineapple?,No,fruit_parts
+"When cutting a pineapple, what tool should be used?",Knife,cutting_tool
+"When peeling a pineapple, what tool should be used?",Knife,peeling_tool
+Is a Core an anatomical part of a pumpkin?,No,fruit_parts
+Is a Shell an anatomical part of a pumpkin?,No,fruit_parts
+Is a Peel an anatomical part of a pumpkin?,Yes,fruit_parts
+"What is the edibility of a pumpkin's Peel - can it be eaten, should it be avoided or must it be avoided?",ShouldBeAvoided,part_edibility
+Is a Stem an anatomical part of a pumpkin?,No,fruit_parts
+"When cutting a pumpkin, what tool should be used?",Knife,cutting_tool
+"When peeling a pumpkin, what tool should be used?",Knife,peeling_tool
+Is a Core an anatomical part of a strawberry?,No,fruit_parts
+Is a Shell an anatomical part of a strawberry?,No,fruit_parts
+Is a Peel an anatomical part of a strawberry?,No,fruit_parts
+Is a Stem an anatomical part of a strawberry?,Yes,fruit_parts
+"What is the edibility of a strawberry's Stem - can it be eaten, should it be avoided or must it be avoided?",ShouldBeAvoided,part_edibility
+"When cutting a strawberry, what tool should be used?",Knife,cutting_tool
+Is a Core an anatomical part of a squash?,No,fruit_parts
+Is a Shell an anatomical part of a squash?,No,fruit_parts
+Is a Peel an anatomical part of a squash?,Yes,fruit_parts
+"What is the edibility of a squash's Peel - can it be eaten, should it be avoided or must it be avoided?",ShouldBeAvoided,part_edibility
+Is a Stem an anatomical part of a squash?,No,fruit_parts
+"When cutting a squash, what tool should be used?",Knife,cutting_tool
+"When peeling a squash, what tool should be used?",Knife,peeling_tool
+Is a Core an anatomical part of a tomato?,No,fruit_parts
+Is a Shell an anatomical part of a tomato?,No,fruit_parts
+Is a Peel an anatomical part of a tomato?,Yes,fruit_parts
+"What is the edibility of a tomato's Peel - can it be eaten, should it be avoided or must it be avoided?",Edible,part_edibility
+Is a Stem an anatomical part of a tomato?,Yes,fruit_parts
+"What is the edibility of a tomato's Stem - can it be eaten, should it be avoided or must it be avoided?",ShouldBeAvoided,part_edibility
+"When cutting a tomato, what tool should be used?",Knife,cutting_tool
+"When quartering a specific fruit or vegetable, where should the knife be placed - in the middle or at the end of the object?",Middle,cutting_position
+"When quartering a specific fruit or vegetable, what other cutting task - if any - should be executed before?",Halving,prior_task
+"When quartering a specific fruit or vegetable, how many cuts need to be made - exactly one or more than one?",exactly 1,repetitions
+"When quartering a specific fruit or vegetable, what is form of the input to perform the action on?",Halve,task_inputs
+"When quartering a specific fruit or vegetable, what is form and amount of the resulting pieces?",2 Quarter,task_results
+"When julienning a specific fruit or vegetable, where should the knife be placed - in the middle or at the end of the object?",End,cutting_position
+"When julienning a specific fruit or vegetable, what other cutting task - if any - should be executed before?",Slicing,prior_task
+"When julienning a specific fruit or vegetable, how many cuts need to be made - exactly one or more than one?",at least 1,repetitions
+"When julienning a specific fruit or vegetable, what is form of the input to perform the action on?",Slice,task_inputs
+"When julienning a specific fruit or vegetable, what is form and amount of the resulting pieces?",1 Slice and 1 Stripe,task_results
+"When halving a specific fruit or vegetable, where should the knife be placed - in the middle or at the end of the object?",Middle,cutting_position
+"When halving a specific fruit or vegetable, how many cuts need to be made - exactly one or more than one?",exactly 1,repetitions
+"When halving a specific fruit or vegetable, what is form of the input to perform the action on?",Whole,task_inputs
+"When halving a specific fruit or vegetable, what is form and amount of the resulting pieces?",2 Halve,task_results
+"When dicing a specific fruit or vegetable, where should the knife be placed - in the middle or at the end of the object?",End,cutting_position
+"When dicing a specific fruit or vegetable, what other cutting task - if any - should be executed before?",Julienning,prior_task
+"When dicing a specific fruit or vegetable, how many cuts need to be made - exactly one or more than one?",at least 1,repetitions
+"When dicing a specific fruit or vegetable, what is form of the input to perform the action on?",Stripe,task_inputs
+"When dicing a specific fruit or vegetable, what is form and amount of the resulting pieces?",1 Cube and 1 Stripe,task_results
+"When cutting a specific fruit or vegetable, where should the knife be placed - in the middle or at the end of the object?",End,cutting_position
+"When cutting a specific fruit or vegetable, how many cuts need to be made - exactly one or more than one?",exactly 1,repetitions
+"When cutting a specific fruit or vegetable, what is form of the input to perform the action on?",Whole or FoodPart,task_inputs
+"When cutting a specific fruit or vegetable, what is form and amount of the resulting pieces?",1 FoodPart and 1 Slice,task_results
+"When slicing a specific fruit or vegetable, where should the knife be placed - in the middle or at the end of the object?",End,cutting_position
+"When slicing a specific fruit or vegetable, how many cuts need to be made - exactly one or more than one?",at least 1,repetitions
+"When slicing a specific fruit or vegetable, what is form of the input to perform the action on?",Whole or FoodPart,task_inputs
+"When slicing a specific fruit or vegetable, what is form and amount of the resulting pieces?",1 FoodPart and 1 Slice,task_results
+"When snipping a specific fruit or vegetable, where should the knife be placed - in the middle or at the end of the object?",End,cutting_position
+"When snipping a specific fruit or vegetable, how many cuts need to be made - exactly one or more than one?",at least 1,repetitions
+"When snipping a specific fruit or vegetable, what is form of the input to perform the action on?",Whole or FoodPart,task_inputs
+"When snipping a specific fruit or vegetable, what is form and amount of the resulting pieces?",1 FoodPart and 1 Slice,task_results
+"When slivering a specific fruit or vegetable, where should the knife be placed - in the middle or at the end of the object?",End,cutting_position
+"When slivering a specific fruit or vegetable, how many cuts need to be made - exactly one or more than one?",at least 1,repetitions
+"When slivering a specific fruit or vegetable, what is form of the input to perform the action on?",Whole or FoodPart,task_inputs
+"When slivering a specific fruit or vegetable, what is form and amount of the resulting pieces?",1 FoodPart and 1 Slice,task_results
+"When sawing a specific fruit or vegetable, where should the knife be placed - in the middle or at the end of the object?",End,cutting_position
+"When sawing a specific fruit or vegetable, how many cuts need to be made - exactly one or more than one?",exactly 1,repetitions
+"When sawing a specific fruit or vegetable, what is form of the input to perform the action on?",Whole or FoodPart,task_inputs
+"When sawing a specific fruit or vegetable, what is form and amount of the resulting pieces?",1 FoodPart and 1 Slice,task_results
+"When paring a specific fruit or vegetable, where should the knife be placed - in the middle or at the end of the object?",End,cutting_position
+"When paring a specific fruit or vegetable, how many cuts need to be made - exactly one or more than one?",exactly 1,repetitions
+"When paring a specific fruit or vegetable, what is form of the input to perform the action on?",Whole or FoodPart,task_inputs
+"When paring a specific fruit or vegetable, what is form and amount of the resulting pieces?",1 FoodPart and 1 Slice,task_results
+"When carving a specific fruit or vegetable, where should the knife be placed - in the middle or at the end of the object?",End,cutting_position
+"When carving a specific fruit or vegetable, how many cuts need to be made - exactly one or more than one?",exactly 1,repetitions
+"When carving a specific fruit or vegetable, what is form of the input to perform the action on?",Whole or FoodPart,task_inputs
+"When carving a specific fruit or vegetable, what is form and amount of the resulting pieces?",1 FoodPart and 1 Slice,task_results
+"When mincing a specific fruit or vegetable, where should the knife be placed - in the middle or at the end of the object?",End,cutting_position
+"When mincing a specific fruit or vegetable, what other cutting task - if any - should be executed before?",Julienning,prior_task
+"When mincing a specific fruit or vegetable, how many cuts need to be made - exactly one or more than one?",at least 1,repetitions
+"When mincing a specific fruit or vegetable, what is form of the input to perform the action on?",Stripe,task_inputs
+"When mincing a specific fruit or vegetable, what is form and amount of the resulting pieces?",1 Cube and 1 Stripe,task_results
+"When cubing a specific fruit or vegetable, where should the knife be placed - in the middle or at the end of the object?",End,cutting_position
+"When cubing a specific fruit or vegetable, what other cutting task - if any - should be executed before?",Julienning,prior_task
+"When cubing a specific fruit or vegetable, how many cuts need to be made - exactly one or more than one?",at least 1,repetitions
+"When cubing a specific fruit or vegetable, what is form of the input to perform the action on?",Stripe,task_inputs
+"When cubing a specific fruit or vegetable, what is form and amount of the resulting pieces?",1 Cube and 1 Stripe,task_results
+"When chopping a specific fruit or vegetable, where should the knife be placed - in the middle or at the end of the object?",End,cutting_position
+"When chopping a specific fruit or vegetable, what other cutting task - if any - should be executed before?",Julienning,prior_task
+"When chopping a specific fruit or vegetable, how many cuts need to be made - exactly one or more than one?",at least 1,repetitions
+"When chopping a specific fruit or vegetable, what is form of the input to perform the action on?",Stripe,task_inputs
+"When chopping a specific fruit or vegetable, what is form and amount of the resulting pieces?",1 Cube and 1 Stripe,task_results
+"When dividing a specific fruit or vegetable, where should the knife be placed - in the middle or at the end of the object?",Middle,cutting_position
+"When dividing a specific fruit or vegetable, how many cuts need to be made - exactly one or more than one?",exactly 1,repetitions
+"When dividing a specific fruit or vegetable, what is form of the input to perform the action on?",Whole,task_inputs
+"When dividing a specific fruit or vegetable, what is form and amount of the resulting pieces?",2 Halve,task_results

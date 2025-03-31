@@ -26,15 +26,15 @@ def get_qas_for_taks(graph: Graph) -> (str, str):
         # Cutting position
         for row in graph.query(get_cutting_position_query(iri)):
             if str(row.res) == 'SlicingPosition':
-                res.append((get_cutting_position_question(task), 'End'))
+                res.append((get_cutting_position_question(task), 'End', 'cutting_position'))
             else:
-                res.append((get_cutting_position_question(task), 'Middle'))
+                res.append((get_cutting_position_question(task), 'Middle', 'cutting_position'))
         # Prior task to execute
         for row in graph.query(get_prior_task_query(iri)):
-            res.append((get_prior_task_question(task), row.res))
+            res.append((get_prior_task_question(task), row.res, 'prior_task'))
         # Repetitions
         for row in graph.query(get_repetitions_query(iri)):
-            res.append((get_repetitions_question(task), row.res))
+            res.append((get_repetitions_question(task), row.res, 'repetitions'))
         # Input form
         inputs = graph.query(get_input_form_query(iri))
         ins = set()
@@ -43,13 +43,13 @@ def get_qas_for_taks(graph: Graph) -> (str, str):
                 ins.add("Whole")
             else:
                 ins.add(str(row.res))
-        res.append((get_input_form_question(task), " or ".join(ins)))
+        res.append((get_input_form_question(task), " or ".join(ins), 'task_inputs'))
         # Output form
         outputs = graph.query(get_result_obj_query(iri))
         outs = set()
         for row in outputs:
             outs.add(f"{row.cardinality} {str(row.res)}")
-        res.append((get_result_obj_question(task), " and ".join(outs)))
+        res.append((get_result_obj_question(task), " and ".join(outs), 'task_results'))
         print(f"{len(res) - l_b} new Questions added for {task}")
     return res
 

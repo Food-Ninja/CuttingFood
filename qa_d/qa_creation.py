@@ -31,6 +31,6 @@ task_qas = get_qas_for_taks(g)
 
 with open("qa_d/qa.csv", "w", newline="", encoding="utf-8") as file:
     writer = csv.writer(file)
-    writer.writerow(["Question", "Answer"])
+    writer.writerow(["Question", "Answer", "Category"])
     writer.writerows(food_qas)
     writer.writerows(task_qas)

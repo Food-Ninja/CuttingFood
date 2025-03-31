@@ -30,22 +30,22 @@ foods = {
 parts = ['Core', 'Shell', 'Peel', 'Stem']
 
 
-def get_qas_for_food(graph: Graph) -> (str, str):
+def get_qas_for_food(graph: Graph) -> (str, str, str):
     res = []
     for food, iri in foods.items():
         l_b = len(res)
         for part in parts:
             for row in graph.query(get_part_connection_query(iri, part)):
                 if row:
-                    res.append((get_fruit_part_question(food, part), 'Yes'))
+                    res.append((get_fruit_part_question(food, part), 'Yes', 'fruit_parts'))
                     for row_ed in graph.query(get_part_edibility_query(iri, part)):
-                        res.append((get_part_edibility_question(food, part), row_ed.res))
+                        res.append((get_part_edibility_question(food, part), row_ed.res, 'part_edibility'))
                 else:
-                    res.append((get_fruit_part_question(food, part), 'No'))
+                    res.append((get_fruit_part_question(food, part), 'No', 'fruit_parts'))
         for row in graph.query(get_cutting_tool_query(iri)):
-            res.append((get_cutting_tool_question(food), row.res))
+            res.append((get_cutting_tool_question(food), row.res, 'cutting_tool'))
         for row in graph.query(get_peeling_tool_query(iri)):
-            res.append((get_peeling_tool_question(food), row.res))
+            res.append((get_peeling_tool_question(food), row.res, 'peeling_tool'))
         print(f"{len(res) - l_b} new Questions added for {food}")
     return res
 
