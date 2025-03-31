@@ -38,6 +38,8 @@ def get_qas_for_food(graph: Graph) -> (str, str):
             for row in graph.query(get_part_connection_query(iri, part)):
                 if row:
                     res.append((get_fruit_part_question(food, part), 'Yes'))
+                    for row_ed in graph.query(get_part_edibility_query(iri, part)):
+                        res.append((get_part_edibility_question(food, part), row_ed.res))
                 else:
                     res.append((get_fruit_part_question(food, part), 'No'))
         for row in graph.query(get_cutting_tool_query(iri)):
@@ -60,10 +62,30 @@ def get_part_connection_query(food: str, part: str) -> str:
     }}
     """
 
-
 def get_fruit_part_question(food: str, part: str) -> str:
     return f"Is {get_article(part)} {part} an anatomical part of {get_article(food)} {food}?"
 
+
+# Prefixes: owl, cut, rdf, rdfs
+def get_part_edibility_query(food: str, part: str) -> str:
+    return f"""
+    SELECT ?res {{
+        {food} rdfs:subClassOf* ?parts_node.
+        ?parts_node owl:onProperty cut:hasPart.
+        ?parts_node owl:someValuesFrom ?val_node.
+        ?val_node owl:intersectionOf ?inter_node.
+        ?inter_node rdf:first cut:{part}.
+        ?val_node owl:intersectionOf ?edibility_collection.
+        ?edibility_collection rdf:rest*/rdf:first ?edibility_node.
+        ?edibility_node owl:onProperty cut:hasEdibility.
+        ?edibility_node owl:someValuesFrom ?edibility.
+        BIND(REPLACE(STR(?edibility), "^.*[#/]", "") AS ?res).
+    }}
+    """
+
+
+def get_part_edibility_question(food: str, part: str) -> str:
+    return f"What is the edibility of {get_article(food)} {food}'s {part} - can it be eaten, should it be avoided or must it be avoided?"
 
 # Prefixes: owl, soma, rdf, rdfs, sit_aware
 def get_cutting_tool_query(food: str) -> str:

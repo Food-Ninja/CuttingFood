@@ -1,25 +1,31 @@
 Question,Answer
 Is a Core an anatomical part of an almond?,No
 Is a Shell an anatomical part of an almond?,Yes
+"What is the edibility of an almond's Shell - can it be eaten, should it be avoided or must it be avoided?",MustBeAvoided
 Is a Peel an anatomical part of an almond?,No
 Is a Stem an anatomical part of an almond?,No
 "When cutting an almond, what tool should be used?",Knife
 "When peeling an almond, what tool should be used?",Nutcracker
 Is a Core an anatomical part of an apple?,Yes
+"What is the edibility of an apple's Core - can it be eaten, should it be avoided or must it be avoided?",ShouldBeAvoided
 Is a Shell an anatomical part of an apple?,No
 Is a Peel an anatomical part of an apple?,Yes
+"What is the edibility of an apple's Peel - can it be eaten, should it be avoided or must it be avoided?",Edible
 Is a Stem an anatomical part of an apple?,No
 "When cutting an apple, what tool should be used?",CuttingTool
 "When peeling an apple, what tool should be used?",Peeler
 Is a Core an anatomical part of an avocado?,Yes
+"What is the edibility of an avocado's Core - can it be eaten, should it be avoided or must it be avoided?",MustBeAvoided
 Is a Shell an anatomical part of an avocado?,No
 Is a Peel an anatomical part of an avocado?,Yes
+"What is the edibility of an avocado's Peel - can it be eaten, should it be avoided or must it be avoided?",MustBeAvoided
 Is a Stem an anatomical part of an avocado?,No
 "When cutting an avocado, what tool should be used?",Knife
 "When peeling an avocado, what tool should be used?",Knife
 Is a Core an anatomical part of a banana?,No
 Is a Shell an anatomical part of a banana?,No
 Is a Peel an anatomical part of a banana?,Yes
+"What is the edibility of a banana's Peel - can it be eaten, should it be avoided or must it be avoided?",MustBeAvoided
 Is a Stem an anatomical part of a banana?,No
 "When cutting a banana, what tool should be used?",Knife
 "When peeling a banana, what tool should be used?",Hand
@@ -35,11 +41,13 @@ Is a Stem an anatomical part of a cherry?,No
 Is a Core an anatomical part of a citron?,No
 Is a Shell an anatomical part of a citron?,No
 Is a Peel an anatomical part of a citron?,Yes
+"What is the edibility of a citron's Peel - can it be eaten, should it be avoided or must it be avoided?",MustBeAvoided
 Is a Stem an anatomical part of a citron?,No
 "When cutting a citron, what tool should be used?",Knife
 "When peeling a citron, what tool should be used?",Hand
 Is a Core an anatomical part of a coconut?,No
 Is a Shell an anatomical part of a coconut?,Yes
+"What is the edibility of a coconut's Shell - can it be eaten, should it be avoided or must it be avoided?",MustBeAvoided
 Is a Peel an anatomical part of a coconut?,No
 Is a Stem an anatomical part of a coconut?,No
 "When cutting a coconut, what tool should be used?",Knife
@@ -47,34 +55,41 @@ Is a Stem an anatomical part of a coconut?,No
 Is a Core an anatomical part of a cucumber?,No
 Is a Shell an anatomical part of a cucumber?,No
 Is a Peel an anatomical part of a cucumber?,Yes
+"What is the edibility of a cucumber's Peel - can it be eaten, should it be avoided or must it be avoided?",Edible
 Is a Stem an anatomical part of a cucumber?,Yes
+"What is the edibility of a cucumber's Stem - can it be eaten, should it be avoided or must it be avoided?",ShouldBeAvoided
 "When cutting a cucumber, what tool should be used?",Knife
 "When peeling a cucumber, what tool should be used?",Peeler
 Is a Core an anatomical part of a kiwi?,No
 Is a Shell an anatomical part of a kiwi?,No
 Is a Peel an anatomical part of a kiwi?,Yes
+"What is the edibility of a kiwi's Peel - can it be eaten, should it be avoided or must it be avoided?",Edible
 Is a Stem an anatomical part of a kiwi?,No
 "When cutting a kiwi, what tool should be used?",Knife
 "When peeling a kiwi, what tool should be used?",Knife
 Is a Core an anatomical part of a kumquat?,No
 Is a Shell an anatomical part of a kumquat?,No
 Is a Peel an anatomical part of a kumquat?,Yes
+"What is the edibility of a kumquat's Peel - can it be eaten, should it be avoided or must it be avoided?",MustBeAvoided
 Is a Stem an anatomical part of a kumquat?,No
 "When cutting a kumquat, what tool should be used?",Knife
 "When peeling a kumquat, what tool should be used?",Hand
 Is a Core an anatomical part of a lemon?,No
 Is a Shell an anatomical part of a lemon?,No
 Is a Peel an anatomical part of a lemon?,Yes
+"What is the edibility of a lemon's Peel - can it be eaten, should it be avoided or must it be avoided?",MustBeAvoided
 Is a Stem an anatomical part of a lemon?,No
 "When cutting a lemon, what tool should be used?",Knife
 "When peeling a lemon, what tool should be used?",Hand
 Is a Core an anatomical part of a lime?,No
 Is a Shell an anatomical part of a lime?,No
 Is a Peel an anatomical part of a lime?,Yes
+"What is the edibility of a lime's Peel - can it be eaten, should it be avoided or must it be avoided?",MustBeAvoided
 Is a Stem an anatomical part of a lime?,No
 "When cutting a lime, what tool should be used?",Knife
 "When peeling a lime, what tool should be used?",Hand
 Is a Core an anatomical part of an olive?,Yes
+"What is the edibility of an olive's Core - can it be eaten, should it be avoided or must it be avoided?",MustBeAvoided
 Is a Shell an anatomical part of an olive?,No
 Is a Peel an anatomical part of an olive?,No
 Is a Stem an anatomical part of an olive?,No
@@ -82,12 +97,15 @@ Is a Stem an anatomical part of an olive?,No
 Is a Core an anatomical part of an orange?,No
 Is a Shell an anatomical part of an orange?,No
 Is a Peel an anatomical part of an orange?,Yes
+"What is the edibility of an orange's Peel - can it be eaten, should it be avoided or must it be avoided?",MustBeAvoided
+"What is the edibility of an orange's Peel - can it be eaten, should it be avoided or must it be avoided?",MustBeAvoided
 Is a Stem an anatomical part of an orange?,No
 "When cutting an orange, what tool should be used?",Knife
 "When cutting an orange, what tool should be used?",Knife
 "When peeling an orange, what tool should be used?",Hand
 "When peeling an orange, what tool should be used?",Hand
 Is a Core an anatomical part of a peach?,Yes
+"What is the edibility of a peach's Core - can it be eaten, should it be avoided or must it be avoided?",MustBeAvoided
 Is a Shell an anatomical part of a peach?,No
 Is a Peel an anatomical part of a peach?,No
 Is a Stem an anatomical part of a peach?,No
@@ -96,16 +114,20 @@ Is a Core an anatomical part of a pepper?,No
 Is a Shell an anatomical part of a pepper?,No
 Is a Peel an anatomical part of a pepper?,No
 Is a Stem an anatomical part of a pepper?,Yes
+"What is the edibility of a pepper's Stem - can it be eaten, should it be avoided or must it be avoided?",ShouldBeAvoided
 "When cutting a pepper, what tool should be used?",Knife
 Is a Core an anatomical part of a pineapple?,Yes
+"What is the edibility of a pineapple's Core - can it be eaten, should it be avoided or must it be avoided?",Edible
 Is a Shell an anatomical part of a pineapple?,No
 Is a Peel an anatomical part of a pineapple?,Yes
+"What is the edibility of a pineapple's Peel - can it be eaten, should it be avoided or must it be avoided?",MustBeAvoided
 Is a Stem an anatomical part of a pineapple?,No
 "When cutting a pineapple, what tool should be used?",Knife
 "When peeling a pineapple, what tool should be used?",Knife
 Is a Core an anatomical part of a pumpkin?,No
 Is a Shell an anatomical part of a pumpkin?,No
 Is a Peel an anatomical part of a pumpkin?,Yes
+"What is the edibility of a pumpkin's Peel - can it be eaten, should it be avoided or must it be avoided?",ShouldBeAvoided
 Is a Stem an anatomical part of a pumpkin?,No
 "When cutting a pumpkin, what tool should be used?",Knife
 "When peeling a pumpkin, what tool should be used?",Knife
@@ -113,17 +135,21 @@ Is a Core an anatomical part of a strawberry?,No
 Is a Shell an anatomical part of a strawberry?,No
 Is a Peel an anatomical part of a strawberry?,No
 Is a Stem an anatomical part of a strawberry?,Yes
+"What is the edibility of a strawberry's Stem - can it be eaten, should it be avoided or must it be avoided?",ShouldBeAvoided
 "When cutting a strawberry, what tool should be used?",Knife
 Is a Core an anatomical part of a squash?,No
 Is a Shell an anatomical part of a squash?,No
 Is a Peel an anatomical part of a squash?,Yes
+"What is the edibility of a squash's Peel - can it be eaten, should it be avoided or must it be avoided?",ShouldBeAvoided
 Is a Stem an anatomical part of a squash?,No
 "When cutting a squash, what tool should be used?",Knife
 "When peeling a squash, what tool should be used?",Knife
 Is a Core an anatomical part of a tomato?,No
 Is a Shell an anatomical part of a tomato?,No
 Is a Peel an anatomical part of a tomato?,Yes
+"What is the edibility of a tomato's Peel - can it be eaten, should it be avoided or must it be avoided?",Edible
 Is a Stem an anatomical part of a tomato?,Yes
+"What is the edibility of a tomato's Stem - can it be eaten, should it be avoided or must it be avoided?",ShouldBeAvoided
 "When cutting a tomato, what tool should be used?",Knife
 "When quartering a specific fruit or vegetable, where should the knife be placed - in the middle or at the end of the object?",Middle
 "When quartering a specific fruit or vegetable, what other cutting task - if any - should be executed before?",Halving
