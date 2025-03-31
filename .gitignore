@@ -130,3 +130,6 @@ dmypy.json
 
 # idea folder created by Pycharm
 .idea/
+
+# credentials
+*/credentials.json
