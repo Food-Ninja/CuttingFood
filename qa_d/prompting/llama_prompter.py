@@ -1,7 +1,7 @@
 import torch
 import transformers
 
-from prompter import Prompter
+from qa_d.prompting.prompter import Prompter
 
 
 class LlamaPrompter(Prompter):

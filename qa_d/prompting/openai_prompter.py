@@ -1,14 +1,16 @@
 import json
+import os
 
 from openai import OpenAI
 
-from prompter import Prompter
+from qa_d.prompting.prompter import Prompter
 
 
 class OpenAIPrompter(Prompter):
     def __init__(self):
         super().__init__("gpt-4o-2024-11-20")
-        json_text = json.load(open('credentials.json'))
+        credentials = os.path.join(os.path.dirname(__file__), "..", "prompting", "credentials.json")
+        json_text = json.load(open(credentials))
         self.client = OpenAI(
             api_key=json_text["api_key"],
         )

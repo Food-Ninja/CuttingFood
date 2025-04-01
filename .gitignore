@@ -132,4 +132,4 @@ dmypy.json
 .idea/
 
 # credentials
-/qa_d/evaluation/credentials.json
+/qa_d/prompting/credentials.json
