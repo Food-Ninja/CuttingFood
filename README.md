@@ -17,11 +17,11 @@ We use two ways of classifying the results:
 
 The results can be seen below:
 
-| LLM                    | Correct Answers | Acc       | Avg. Score | Ans. w.o. score |
-|------------------------|-----------------|-----------|------------|---------------|
-| gemma-2-27b-it         | **139**         | **0.638** | 3.843      | 1             |
-| gpt-4o-2024-08-06      | 121             | 0.555     | **4.028**  | 0             |
-| Llama-3.3-70B-Instruct | 134             | 0.615     | 3.778      | 6             |
+| LLM                    | Correct Answers | Acc       | Ans. w.o. binary | Avg. Score | Ans. w.o. score |
+|------------------------|-----------------|-----------|------------------|------------|-----------------|
+| gemma-2-27b-it         | **139**         | **0.638** | 0                | 3.843      | 1               |
+| gpt-4o-2024-08-06      | 121             | 0.555     | 0                | **4.028**  | 0               |
+| Llama-3.3-70B-Instruct | 134             | 0.615     | 0                | 3.778      | 6               |
 
 ## Repository Structure
 ```bash
