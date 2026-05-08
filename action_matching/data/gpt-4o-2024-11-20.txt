@@ -1,0 +1,43 @@
+Here is the grouping of the actions based on their parameterization in the domain of "Cutting fruits and vegetables." Actions with similar execution parameters are grouped together, and one representative is chosen for each group. Actions that are not suitable for this domain are excluded.
+
+### Group 1: General Cutting Actions
+- **Actions**: 'cut', 'divide', 'halve', 'quarter'
+- **Representative**: 'cut'
+- **Reason**: These actions involve general cutting or dividing into parts, often without specifying the shape or size.
+
+### Group 2: Slicing Actions
+- **Actions**: 'slice', 'sliver', 'julienne'
+- **Representative**: 'slice'
+- **Reason**: These actions involve cutting into thin, elongated pieces, with 'julienne' being a specific type of slicing.
+
+### Group 3: Dicing and Cubing Actions
+- **Actions**: 'dice', 'cube'
+- **Representative**: 'dice'
+- **Reason**: These actions involve cutting into small, uniform cubes or pieces.
+
+### Group 4: Chopping Actions
+- **Actions**: 'chop', 'mince'
+- **Representative**: 'chop'
+- **Reason**: These actions involve cutting into smaller pieces, with 'mince' being a finer version of chopping.
+
+### Group 5: Peeling and Paring Actions
+- **Actions**: 'pare'
+- **Representative**: 'pare'
+- **Reason**: This action involves removing the outer layer or skin, which is distinct from cutting into pieces.
+
+### Group 6: Carving Actions
+- **Actions**: 'carve'
+- **Representative**: 'carve'
+- **Reason**: This action involves cutting with precision, often for decorative or specific purposes.
+
+### Excluded Actions:
+- **'snip'**: More relevant to cutting with scissors, not typically used for fruits and vegetables.
+- **'saw'**: Implies a back-and-forth motion with a serrated tool, not commonly used for cutting fruits and vegetables.
+
+### Final Grouping Summary:
+1. General Cutting: 'cut'
+2. Slicing: 'slice'
+3. Dicing and Cubing: 'dice'
+4. Chopping: 'chop'
+5. Peeling and Paring: 'pare'
+6. Carving: 'carve'
