@@ -1,0 +1,37 @@
+Here's a grouping of the actions based on their parameterization in the context of cutting fruits and vegetables:
+
+**Group 1: General Cutting**
+
+* **Representative:**  `cut` 
+* **Members:**  `slice`, `chop`, `divide`
+
+These actions represent the most basic form of cutting, without specifying a particular shape or size.
+
+**Group 2:  Precise Cuts**
+
+* **Representative:** `dice`
+* **Members:** `cube`, `julienne`, `mince`, `sliver`
+
+These actions involve creating small, uniform pieces of a specific shape.
+
+**Group 3: Halving/Quartering**
+
+* **Representative:** `halve`
+* **Members:** `quarter`
+
+These actions involve dividing the item into equal halves or quarters.
+
+**Group 4:  Peeling/Removing**
+
+* **Representative:** `pare`
+
+This action specifically refers to removing the outer layer (skin) of a fruit or vegetable.
+
+**Excluded Actions:**
+
+* **saw:**  While technically a cutting action, sawing is too forceful and imprecise for delicate fruits and vegetables.
+* **carve:** Carving implies shaping or decorating, which is beyond the scope of basic food preparation.
+* **snip:** Snipping is usually associated with cutting small, thin items like herbs, not larger fruits and vegetables. 
+
+
+Let me know if you'd like to explore other aspects of these actions or have more verbs to categorize!

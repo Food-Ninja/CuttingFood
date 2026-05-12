@@ -3,7 +3,7 @@ import os
 
 from openai import OpenAI
 
-from qa_d.prompting.prompter import Prompter
+from action_matching.prompting.prompter import Prompter
 
 
 class OpenAIPrompter(Prompter):

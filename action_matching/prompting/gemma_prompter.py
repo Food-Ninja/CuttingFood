@@ -3,7 +3,7 @@ import re
 import torch
 import transformers
 
-from qa_d.prompting.prompter import Prompter
+from action_matching.prompting.prompter import Prompter
 
 
 class GemmaPrompter(Prompter):
