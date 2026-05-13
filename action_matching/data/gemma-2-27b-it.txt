@@ -1,37 +1,45 @@
 Here's a grouping of the actions based on their parameterization in the context of cutting fruits and vegetables:
 
-**Group 1: General Cutting**
+**Group 1:  Dicing/Cubing**
 
-* **Representative:**  `cut` 
-* **Members:**  `slice`, `chop`, `divide`
+* **Representative:** Dice
+* **Members:** Cube, Chop (can overlap with other groups depending on size)
+* **Parameters:**
+    * **Cutting position:**  Various, often across the entire object
+    * **Amount of repetitions:** Multiple, aiming for uniform pieces
+    * **Input object/shape:** Whole or roughly shaped fruit/vegetable
+    * **Output object/shape:** Small, roughly cubic pieces
 
-These actions represent the most basic form of cutting, without specifying a particular shape or size.
+**Group 2: Slicing**
 
-**Group 2:  Precise Cuts**
+* **Representative:** Slice
+* **Members:**  Halve, Quarter, Sliver
+* **Parameters:**
+    * **Cutting position:**  Along a single axis, creating flat pieces
+    * **Amount of repetitions:**  One or multiple, depending on desired thickness
+    * **Input object/shape:** Whole or roughly shaped fruit/vegetable
+    * **Output object/shape:** Flat pieces of varying thickness
 
-* **Representative:** `dice`
-* **Members:** `cube`, `julienne`, `mince`, `sliver`
+**Group 3:  Fine Cutting**
 
-These actions involve creating small, uniform pieces of a specific shape.
-
-**Group 3: Halving/Quartering**
-
-* **Representative:** `halve`
-* **Members:** `quarter`
-
-These actions involve dividing the item into equal halves or quarters.
-
-**Group 4:  Peeling/Removing**
-
-* **Representative:** `pare`
-
-This action specifically refers to removing the outer layer (skin) of a fruit or vegetable.
+* **Representative:** Mince
+* **Members:** Julienne, Snip
+* **Parameters:**
+    * **Cutting position:**  Very small, precise cuts
+    * **Amount of repetitions:** Many
+    * **Input object/shape:** Often pre-sliced or chopped
+    * **Output object/shape:** Very small, uniform pieces
 
 **Excluded Actions:**
 
-* **saw:**  While technically a cutting action, sawing is too forceful and imprecise for delicate fruits and vegetables.
-* **carve:** Carving implies shaping or decorating, which is beyond the scope of basic food preparation.
-* **snip:** Snipping is usually associated with cutting small, thin items like herbs, not larger fruits and vegetables. 
+* **Divide:** Too general. While it could apply, it lacks the specificity of the other actions.
+* **Saw:**  Implies a sawing motion, not typical for fruit and vegetable preparation.
+* **Carve:** Usually implies shaping or decorative cutting, not standard preparation.
+* **Pare:**  Specifically refers to removing the skin, a distinct action.
+* **Cut:** Too general. It encompasses all the other actions. 
 
 
-Let me know if you'd like to explore other aspects of these actions or have more verbs to categorize!
+**Important Notes:**
+
+* **Overlap:** Some actions like "chop" can fall into multiple groups depending on the size and style of the cut.
+* **Context:** The specific parameters can vary based on the type of fruit or vegetable and the desired outcome.

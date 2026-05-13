@@ -1,39 +1,33 @@
-After analyzing the list of action verbs, I've grouped them based on their parameterization in the domain of "Cutting fruits and vegetables". Here are the groups with a representative action verb for each:
+After analyzing the list of actions and motion parameters, I've grouped the actions into the following categories based on their parameterization in the domain of "Cutting fruits and vegetables". I've also chosen a representative action for each group.
 
-**Group 1: General Cutting**
+**Group 1: Simple Cutting Actions**
  Representative: 'cut'
  Actions: ['cut', 'chop','snip']
- These actions involve general cutting or separating of fruits and vegetables into smaller pieces, without a specific shape or size in mind.
+ Parameters: ['input object/shape', 'output object/shape']
+ These actions involve a basic cutting motion, with the primary parameters being the object being cut and the desired output shape.
 
-**Group 2: Slicing**
+**Group 2: Slicing Actions**
  Representative:'slice'
  Actions: ['slice','sliver']
- These actions involve cutting fruits and vegetables into thin, flat pieces, often for serving or presentation purposes.
+ Parameters: ['input object/shape', 'output object/shape', 'cutting position']
+ These actions involve cutting an object into thin, uniform pieces, with the primary parameters being the object being cut, the desired output shape, and the cutting position.
 
-**Group 3: Dicing and Cubing**
- Representative: 'dice'
- Actions: ['dice', 'cube']
- These actions involve cutting fruits and vegetables into small, uniform cubes, often for cooking or adding to recipes.
-
-**Group 4: Julienne and Stripping**
- Representative: 'julienne'
- Actions: ['julienne']
- This action involves cutting fruits and vegetables into long, thin strips, often for stir-fries or salads.
-
-**Group 5: Halving and Quartering**
+**Group 3: Dividing Actions**
  Representative: 'halve'
- Actions: ['halve', 'quarter']
- These actions involve cutting fruits and vegetables into halves or quarters, often for cooking or serving purposes.
+ Actions: ['halve', 'quarter', 'divide']
+ Parameters: ['input object/shape', 'amount of repetitions']
+ These actions involve dividing an object into equal parts, with the primary parameters being the object being divided and the number of repetitions.
 
-**Group 6: Mincing and Chopping (fine)**
- Representative:'mince'
- Actions: ['mince', 'chop' (in the context of fine chopping)]
- These actions involve cutting fruits and vegetables into very small, fine pieces, often for adding to recipes or sauces.
+**Group 4: Shaping Actions**
+ Representative: 'dice'
+ Actions: ['dice', 'cube','mince', 'julienne']
+ Parameters: ['input object/shape', 'output object/shape', 'amount of repetitions']
+ These actions involve cutting an object into specific shapes, with the primary parameters being the object being cut, the desired output shape, and the number of repetitions.
 
-**Excluded actions:**
-'saw' (not typically used for cutting fruits and vegetables)
-'carve' (more commonly associated with meats or wood)
-'pare' (more commonly associated with removing skin or outer layers)
-'divide' (too general and not specific to cutting fruits and vegetables)
+**Group 5: Carving Actions**
+ Representative: 'carve'
+ Actions: ['carve', 'pare']
+ Parameters: ['input object/shape', 'prior action', 'cutting position']
+ These actions involve removing small amounts of material from an object, with the primary parameters being the object being carved, the prior action, and the cutting position.
 
-Note that some actions could fit into multiple groups, but I've placed them in the one that seems most relevant based on their typical usage and parameterization.
+I excluded'saw' from the grouping as it is not typically used in the context of cutting fruits and vegetables, and is more commonly associated with cutting through wood or other materials.
